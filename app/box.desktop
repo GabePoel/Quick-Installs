@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Box
+Exec=sh /home/gabriel/Documents/Some-Pretty-Boring-Shell-Scripts/mount-box
+Icon=dropbox
+Type=Application
