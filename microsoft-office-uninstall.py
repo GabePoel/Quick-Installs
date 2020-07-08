@@ -1,3 +1,4 @@
+# This is a work in progress!
 import os
 home = os.path.expanduser('~')
 launcher = os.path.join(home, '.local', 'share', 'applications')
