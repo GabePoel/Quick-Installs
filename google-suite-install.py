@@ -1,0 +1,15 @@
+import util
+
+util.make_launcher('google-docs.desktop', 'Google Docs', 'firefox docs.google.com', "Google's document writer.", 'google-docs', categories=['Office'])
+util.make_launcher('google-sheets.desktop', 'Google Sheets', 'firefox sheets.google.com', "Google's spreadsheet editor.", 'google-sheets', categories=['Office'])
+util.make_launcher('google-forms.desktop', 'Google Forms', 'firefox forms.google.com', "Google's form maker.", 'google-forms', categories=['Office'])
+util.make_launcher('google-slides.desktop', 'Google Slides', 'firefox slides.google.com', "Google's slideshow maker.", 'google-slides', categories=['Office'])
+util.make_launcher('google-drawings.desktop', 'Google Drawings', 'firefox drawings.google.com', "Google's art maker.", 'chrome-google-drawings', categories=['Office', 'Media', 'Graphics'])
+util.make_launcher('google-calendar.desktop', 'Google Calendar', 'firefox calendar.google.com', "Google's calendar.", 'google-calendar', categories=['Network', 'Office'])
+util.make_launcher('google-drive.desktop', 'Google Drive', 'firefox drive.google.com', "Online drive.", 'google-drive', categories=['Network', 'Utility', 'Office'])
+util.make_launcher('google-mail.desktop', 'Gmail', 'firefox mail.google.com', "Google's email service.", 'gmail', categories=['Network', 'Email', 'Office', 'InstantMessaging'])
+util.make_launcher('google-photos.desktop', 'Google Photos', 'firefox photos.google.com', "Google's photo library.", 'google-photos', categories=['Graphics', 'Media'])
+util.make_launcher('google-messages.desktop', 'Messages', 'firefox messages.google.com', "Google's SMS service.", 'google-messages', categories=['Network', 'Office', 'InstantMessaging'])
+util.make_launcher('google-hangouts.desktop', 'Google Hangouts', 'firefox hangouts.google.com', "Google's instant message service.", 'google-hangouts', categories=['Network', 'Office', 'InstantMessaging'])
+util.make_launcher('google-maps.desktop', 'Google Maps', 'firefox maps.google.com', "Google's map service.", 'google-maps', categories=['Utility'])
+util.make_launcher('google-earth.desktop', 'Google Earth', 'firefox earth.google.com', "Around the world with Google.", 'google-earth', categories=['Utility'])
