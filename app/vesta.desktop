@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=VESTA
-Type=Application
-GenericName=Crystal Visualizer
-Comment=3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.
-Exec=xdg-open ~/.local/share/VESTA/VESTA
-Icon=vesta
-Categories=Education; Science;
