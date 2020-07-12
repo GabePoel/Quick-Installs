@@ -65,4 +65,4 @@ util.make_launcher('google-photos.desktop', 'Google Photos', 'xdg-open https://p
 util.make_launcher('google-messages.desktop', 'Messages', 'xdg-open https://messages.google.com', "Google's SMS service.", 'google-messages', categories=['Network', 'Office', 'InstantMessaging'])
 util.make_launcher('google-hangouts.desktop', 'Google Hangouts', 'xdg-open https://hangouts.google.com', "Google's instant message service.", 'google-hangouts', categories=['Network', 'Office', 'InstantMessaging'])
 util.make_launcher('google-maps.desktop', 'Google Maps', 'xdg-open https://maps.google.com', "Google's map service.", 'google-maps', categories=['Utility'])
-util.make_launcher('google-earth.desktop', 'Google Earth', 'xdg-open https://earth.google.com', "Around the world with Google.", 'google-earth', categories=['Utility'])
+util.make_launcher('google-earth.desktop', 'Google Earth', 'xdg-open https://earth.google.com', "Around the world with Google.", 'google-earth', categories=['Utility'], actions=earth_actions)
