@@ -21,4 +21,5 @@ headspace_actions = [
     ['stats', 'Stats', 'xdg-open https://my.headspace.com/profile/stats'],
     ['journey', 'Journey', 'xdg-open https://my.headspace.com/profile/journey']
 ]
-util.make_launcher('other-headspace.desktop', 'Headspace', 'xdg-open https://my.headspace.com/', 'Guided meditations.', 'headspace', categories=['Health'], actions=headspace_actions)
+util.make_launcher('other-headspace.desktop', 'Headspace', 'xdg-open https://my.headspace.com', 'Guided meditations.', 'headspace', categories=['Health'], actions=headspace_actions)
+util.make_launcher('github.desktop', 'GitHub', 'xdg-open https://github.com', 'Online git repository service.', 'github', categories=['Office', 'Network', 'Utility'])
