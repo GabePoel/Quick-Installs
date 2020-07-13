@@ -16,3 +16,9 @@ box_actions = [
     ['sync', 'Sync', 'sh ' + os.path.join(scripts, 'sync-box')]
 ]
 util.make_launcher('other-box.desktop', 'Box', 'sh ' + os.path.join(scripts, 'mount-box'), 'Cloud file storage.', 'dropbox', categories=['Network', 'Utility', 'Office'], actions=box_actions)
+headspace_actions = [
+    ['discover', 'Discover', 'xdg-open https://my.headspace.com/discover/packs'],
+    ['stats', 'Stats', 'xdg-open https://my.headspace.com/profile/stats'],
+    ['journey', 'Journey', 'xdg-open https://my.headspace.com/profile/journey']
+]
+util.make_launcher('other-headspace.desktop', 'Headspace', 'xdg-open https://my.headspace.com/', 'Guided meditations.', 'headspace', categories=['Health'], actions=headspace_actions)
