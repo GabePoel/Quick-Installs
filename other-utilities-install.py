@@ -5,7 +5,7 @@ import os
 
 util.make_launcher('other-audible.desktop', 'Audible', 'xdg-open https://audible.com', "Amazon's audiobook service.", 'audible', categories=['Audio'])
 util.make_launcher('other-messenger.desktop', 'Messenger', 'xdg-open https://messenger.com', "Facebook instant messaging.", 'messengerfordesktop', categories=['InstantMessaging'])
-util.make_launcher('other-materials-project.desktop', 'Materials Project', 'xdg-open https://materialsproject.org', 'Computational materials prediction database.', 'kalzium', categories=['Science'])
+util.make_launcher('other-materials-project.desktop', 'Materials Project', 'xdg-open https://materialsproject.org', 'Computational materials prediction database.', 'materials-project', categories=['Science'])
 
 home = os.path.expanduser('~')
 documents = os.path.join(home, 'Documents')
@@ -22,4 +22,6 @@ headspace_actions = [
     ['journey', 'Journey', 'xdg-open https://my.headspace.com/profile/journey']
 ]
 util.make_launcher('other-headspace.desktop', 'Headspace', 'xdg-open https://my.headspace.com', 'Guided meditations.', 'headspace', categories=['Health'], actions=headspace_actions)
-util.make_launcher('github.desktop', 'GitHub', 'xdg-open https://github.com', 'Online git repository service.', 'github', categories=['Office', 'Network', 'Utility'])
+util.make_launcher('other-github.desktop', 'GitHub', 'xdg-open https://github.com', 'Online git repository service.', 'github', categories=['Office', 'Network', 'Utility'])
+util.make_launcher('other-wolfram-alpha.desktop', 'Wolfram Alpha', 'xdg-open https://wolframalpha.com', 'Online calculator.', 'wolfram-alpha', categories=['Science', 'Education'])
+util.make_launcher('other-lastpass.desktop', 'LastPass', 'xdg-open https://lastpass.com/?ac=1', 'Password manager.', 'lastpass', categories=['Network', 'Utility'])
