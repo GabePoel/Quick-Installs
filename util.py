@@ -88,3 +88,9 @@ def web_install(address):
     wget.download(address, fp)
     system('sudo apt install ' + str(fp))
     system('rm ' + str(fp))
+
+def set_template(name, text):
+    fp = path.join(home, 'Templates', name)
+    f = open(fp, 'w')
+    f.write(text)
+    f.close()
