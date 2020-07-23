@@ -25,3 +25,4 @@ util.make_launcher('other-headspace.desktop', 'Headspace', 'xdg-open https://my.
 util.make_launcher('other-github.desktop', 'GitHub', 'xdg-open https://github.com', 'Online git repository service.', 'github', categories=['Office', 'Network', 'Utility'])
 util.make_launcher('other-wolfram-alpha.desktop', 'Wolfram Alpha', 'xdg-open https://wolframalpha.com', 'Online calculator.', 'wolfram-alpha', categories=['Science', 'Education'])
 util.make_launcher('other-lastpass.desktop', 'LastPass', 'xdg-open https://lastpass.com/?ac=1', 'Password manager.', 'lastpass', categories=['Network', 'Utility'])
+util.make_launcher('other-jupyter.desktop', 'Jupyter', 'jupyter notebook', 'Interactive programming and data analysis.', 'jupyter-notebook', categories=['Science'])
