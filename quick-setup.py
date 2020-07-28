@@ -46,3 +46,7 @@ if str(sys.argv()[1]) == 'start':
     util.set_template('Blank Document', '')
     util.set_template('Python Scripts', '#!/usr/bin/python3\n')
     util.set_template('Shell Script', '#!/bin/bash\n')
+    try:
+        system('sudo apt install matlab-support')
+    except:
+        pass
