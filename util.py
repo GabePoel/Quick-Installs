@@ -68,7 +68,7 @@ def flatpak_install(app_list):
     try:
         apt_install("flatpak")
         ppa_install("ppa:alexlarsson/flatpak", "flatpak")
-        system("flatpak remode-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
+        system("flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
     except:
         system("sudo pacman -S flatpak")
     for app in app_list:
