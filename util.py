@@ -48,6 +48,10 @@ def apt_install(app_list):
     else:
         install_string += app_list
     system(install_string)
+    
+def apt_remove(app_list):
+    for app in app_list:
+        system("sudo apt remove " + str(app))
 
 def pip_install(app_list):
     for app in app_list:

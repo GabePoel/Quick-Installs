@@ -13,11 +13,13 @@ apt_list = util.import_list(path.join(here, 'man', 'apt'))
 flat_list = util.import_list(path.join(here, 'man', 'flat'))
 pop_list = util.import_list(path.join(here, 'man', 'pop'))
 pip_list = util.import_list(path.join(here, 'man', 'pip'))
+rem_list = util.import_list(path.join(here, 'man', 'rem'))
 
 util.apt_install(apt_list)
 util.flatpak_install(flat_list)
 util.apt_install(pop_list)
 util.pip_install(pip_list)
+util.apt_remove(rem_list)
 
 system('npm install -g gitbook-summary')
 system('python3 google-suite-install.py')
