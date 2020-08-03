@@ -4,6 +4,7 @@ import os
 import wget
 
 home = path.expanduser('~')
+config = path.join(home, 'Documents', 'Configuration')
 
 def make_launcher(file_name, app_name, executable, comment, icon, categories=[], actions=[]):
     launcher_path = path.join(home, '.local', 'share', 'applications', file_name)
@@ -65,12 +66,12 @@ def pacman_install(app_list):
         system("sudo pacman -Syu " + str(app_list))
 
 def flatpak_install(app_list):
-    try:
-        apt_install("flatpak")
-        ppa_install("ppa:alexlarsson/flatpak", "flatpak")
-        system("flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
-    except:
-        system("sudo pacman -S flatpak")
+    # try:
+    #     apt_install("flatpak")
+    #     ppa_install("ppa:alexlarsson/flatpak", "flatpak")
+    #     system("flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo")
+    # except:
+    #     system("sudo pacman -S flatpak")
     for app in app_list:
         system("flatpak install flathub " + str(app))
         system("flatpak --user override " + str(app) + " --filesystem=/home/$USER/.icons/:ro")
@@ -98,3 +99,15 @@ def set_template(name, text):
     f = open(fp, 'w')
     f.write(text)
     f.close()
+
+def git_install(clone_address):
+    if type(clone_address) == list:
+        for address in clone_address:
+            git_install(address)
+    else:
+        dir_name = clone_address[:-4].split('/')[-1]
+        fp = path.join(config, dir_name)
+        if path.exists(fp):
+            system('cd ' + fp + ' && ' + 'git pull')
+        else:
+            system('cd ' + config + ' && ' + 'git clone ' + clone_address)

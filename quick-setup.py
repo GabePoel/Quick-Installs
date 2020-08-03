@@ -7,6 +7,7 @@ import os
 import util
 
 home = util.home
+config = util.config
 here = os.getcwd()
 util.check_dir(path.join(home, '.local', 'share', 'fonts'))
 
@@ -15,17 +16,29 @@ flat_list = util.import_list(path.join(here, 'man', 'flat'))
 pop_list = util.import_list(path.join(here, 'man', 'pop'))
 pip_list = util.import_list(path.join(here, 'man', 'pip'))
 rem_list = util.import_list(path.join(here, 'man', 'rem'))
+git_list = util.import_list(path.join(here, 'man', 'git'))
 
+util.git_install(git_list)
+system('sh ' + path.join(config, 'Some-Pretty-Boring-Shell-Scripts', 'make-all-executable'))
+kp = path.join(config, 'Korla-Plus')
+system('cd ' + kp + ' && python3 ' + path.join(kp, 'install.py') + ' link')
+ls = path.join(config, 'Lapidarium-Shell')
+system('cd ' + ls + ' && python3 ' + path.join(ls, 'install.py') + ' link')
 util.apt_install(apt_list)
 util.flatpak_install(flat_list)
 util.apt_install(pop_list)
 util.pip_install(pip_list)
 util.apt_remove(rem_list)
+system('migrate-down')
+system('restart-gnome-shell')
 
-system('npm install -g gitbook-summary')
-system('python3 google-suite-install.py')
-system('python3 microsoft-office-install.py')
-system('python3 other-utilities-install.py')
+# try:
+#     system('npm install -g gitbook-summary')
+# except:
+#     pass
+# system('python3 google-suite-install.py')
+# system('python3 microsoft-office-install.py')
+# system('python3 other-utilities-install.py')
 
 try:
     if str(sys.argv()[1]) == 'start':
@@ -55,5 +68,5 @@ try:
         except:
             pass
 except:
-    system('clear')
+    # system('clear')
     print('Basic setup complete.')
