@@ -9,6 +9,8 @@ import util
 home = util.home
 config = util.config
 here = os.getcwd()
+util.check_dir(config)
+util.check_dir(path.join(config, 'fonts'))
 util.check_dir(path.join(home, '.local', 'share', 'fonts'))
 
 apt_list = util.import_list(path.join(here, 'man', 'apt'))
@@ -24,6 +26,7 @@ kp = path.join(config, 'Korla-Plus')
 system('cd ' + kp + ' && python3 ' + path.join(kp, 'install.py') + ' link')
 ls = path.join(config, 'Lapidarium-Shell')
 system('cd ' + ls + ' && python3 ' + path.join(ls, 'install.py') + ' link')
+
 util.apt_install(apt_list)
 util.flatpak_install(flat_list)
 util.apt_install(pop_list)
