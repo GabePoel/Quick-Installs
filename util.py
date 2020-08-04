@@ -100,14 +100,18 @@ def set_template(name, text):
     f.write(text)
     f.close()
 
-def git_install(clone_address):
+def git_install(clone_address, sub_dir=None):
+    if sub_dir is None:
+        loc = path.join(config, sub_dir)
+    else:
+        loc = config
     if type(clone_address) == list:
         for address in clone_address:
             git_install(address)
     else:
         dir_name = clone_address[:-4].split('/')[-1]
-        fp = path.join(config, dir_name)
+        fp = path.join(loc, dir_name)
         if path.exists(fp):
             system('cd ' + fp + ' && ' + 'git pull')
         else:
-            system('cd ' + config + ' && ' + 'git clone ' + clone_address)
+            system('cd ' + loc + ' && ' + 'git clone ' + clone_address)
