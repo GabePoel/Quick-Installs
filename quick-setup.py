@@ -19,6 +19,7 @@ pop_list = util.import_list(path.join(here, 'man', 'pop'))
 pip_list = util.import_list(path.join(here, 'man', 'pip'))
 rem_list = util.import_list(path.join(here, 'man', 'rem'))
 git_list = util.import_list(path.join(here, 'man', 'git'))
+ppa_list = util.import_list(path.join(here, 'man', 'ppa'))
 
 util.git_install(git_list)
 system('sh ' + path.join(config, 'Some-Pretty-Boring-Shell-Scripts', 'make-all-executable'))
@@ -29,6 +30,7 @@ system('cd ' + ls + ' && python3 ' + path.join(ls, 'install.py') + ' link')
 if not os.path.exists(path.join(os.path.expanduser('/usr'), 'share', 'blocker')):
     system('cd ~/Downloads && git clone https://github.com/GabePoel/hBlock.git && cd hBlock && sudo sh install.sh && cd .. && sudo rm hBlock -r')
 
+util.ppa_install(ppa_list)
 util.apt_install(apt_list)
 util.flatpak_install(flat_list)
 util.apt_install(pop_list)

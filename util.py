@@ -34,8 +34,9 @@ def category_string(categories):
         s += c + '; '
     return s
 
-def ppa_install(ppa, app_list=None):
-    system("sudo add-apt-repository " + str(ppa))
+def ppa_install(ppa_list, app_list=None):
+    for ppa in ppa_list:
+        system("sudo add-apt-repository " + str(ppa))
     system("sudo apt-get update")
     if not app_list is None:
         apt_install(app_list)
@@ -101,7 +102,7 @@ def set_template(name, text):
     f.close()
 
 def git_install(clone_address, sub_dir=None):
-    if sub_dir is None:
+    if not sub_dir is None:
         loc = path.join(config, sub_dir)
     else:
         loc = config
