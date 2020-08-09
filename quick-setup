@@ -38,6 +38,7 @@ util.pip_install(pip_list)
 util.apt_remove(rem_list)
 system('gsettings set org.gnome.desktop.default-applications.terminal exec tilix')
 system('migrate-down')
+system('nautilus -q')
 system('restart-gnome-shell')
 
 # try:
