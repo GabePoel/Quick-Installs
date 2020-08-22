@@ -1,0 +1,60 @@
+#!/usr/bin/python3
+
+from os import path
+from os import system
+import sys
+import os
+import util
+
+home = util.home
+config = util.config
+here = os.getcwd()
+util.check_dir(config)
+util.check_dir(path.join(config, 'fonts'))
+fonts = util.check_dir(path.join(home, '.local', 'share', 'fonts'))
+gedit_theme = util.check_dir(path.join(home, '.local', 'share', 'gedit', 'styles'))
+user_bin = util.check_dir(path.join(home, '.local', 'bin'))
+
+pip_list = util.import_list(path.join(here, 'man', 'pip'))
+flat_list = util.import_list(path.join(here, 'man', 'flat'))
+dnf_list = util.import_list(path.join(here, 'man', 'dnf'))
+git_list = util.import_list(path.join(here, 'man', 'git'))
+web_list = util.import_list(path.join(here, 'man', 'web'))
+
+util.git_install(git_list)
+system('sh ' + path.join(config, 'Some-Pretty-Boring-Shell-Scripts', 'make-all-executable'))
+kp = path.join(config, 'Korla-Plus')
+system('cd ' + kp + ' && python3 ' + path.join(kp, 'install.py') + ' link')
+ls = path.join(config, 'Lapidarium-Shell')
+system('cd ' + ls + ' && python3 ' + path.join(ls, 'install.py') + ' link')
+
+system('flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo')
+util.flatpak_install(flat_list)
+util.pip_install(pip_list)
+util.dnf_install(dnf_list)
+util.web_install(web_list)
+
+system('sudo rpm --import https://packagecloud.io/shiftkey/desktop/gpgkey &&' +
+    """sudo sh -c 'echo -e "[shiftkey]\nname=GitHub Desktop\nbaseurl=https://packagecloud.io/shiftkey/desktop/el/7/\$basearch\nenabled=1\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/shiftkey/desktop/gpgkey" > /etc/yum.repos.d/shiftkey-desktop.repo' && """ +
+    'sudo dnf install github-desktop'
+)
+
+system(
+    'cd Desktop && ' +
+    'git clone https://github.com/rafaelmardojai/firefox-gnome-theme/ && ' +
+    'cd firefox-gnome-theme &&' +
+    './scripts/install.sh'
+)
+
+system('fix-zoom')
+system('fix-ulauncher')
+system('sudo dnf install nodejs npm make git')
+system('sudo npm install typescript')
+system('cd ~/Desktop && ' +
+    'git clone https://github.com/pop-os/shell && ' +
+    'cd shell && ' +
+    './rebuild.sh'
+)
+
+system('sync-down')
+system('migrate-down')

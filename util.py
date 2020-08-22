@@ -1,6 +1,9 @@
 from os import path
 from os import system
 import os
+
+os.system('pip3 install wget --user')
+
 import wget
 
 home = path.expanduser('~')
@@ -57,7 +60,11 @@ def apt_remove(app_list):
 
 def pip_install(app_list):
     for app in app_list:
-        system("pip3 install " + str(app))
+        system("pip3 install " + str(app) + " --user")
+
+def dnf_install(app_list):
+    for app in app_list:
+        system("sudo dnf install " + str(app) + " -y")
 
 def pacman_install(app_list):
     if type(app_list) is list:
@@ -74,7 +81,7 @@ def flatpak_install(app_list):
     # except:
     #     system("sudo pacman -S flatpak")
     for app in app_list:
-        system("flatpak install flathub " + str(app))
+        system("flatpak install flathub " + str(app) + ' -y')
         system("flatpak --user override " + str(app) + " --filesystem=/home/$USER/.icons/:ro")
 
 def import_list(fp):
@@ -87,13 +94,18 @@ def import_list(fp):
 def check_dir(fp):
     if not path.exists(fp):
         os.makedirs(fp)
+    return fp
 
-def web_install(address):
-    check_dir(path.join(home, 'Documents', 'temp-install'))
-    fp = path.join(home, 'Documents', 'temp-install', 'inst.deb')
-    wget.download(address, fp)
-    system('sudo apt install ' + str(fp))
-    system('rm ' + str(fp))
+def web_install(address_list, extension='.rpm'):
+    for address in address_list:
+        check_dir(path.join(home, 'Documents', 'temp-install'))
+        fp = path.join(home, 'Documents', 'temp-install', 'inst' + extension)
+        wget.download(address, fp)
+        if extension == '.deb':
+            system('sudo apt install ' + str(fp))
+        elif extension == '.rpm':
+            system('sudo rpm install ' + str(fp))
+        system('rm ' + str(fp))
 
 def set_template(name, text):
     fp = path.join(home, 'Templates', name)
