@@ -56,5 +56,10 @@ system('cd ~/Desktop && ' +
     './rebuild.sh'
 )
 
+system('python3 google-suite-install.py')
+system('python3 microsoft-office-install.py')
+system('python3 other-utilities-install.py')
+system('python3 VESTA-install.py')
+
 system('sync-down')
 system('migrate-down')
