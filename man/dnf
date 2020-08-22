@@ -16,7 +16,6 @@ krita
 gnome-maps
 peek
 gnome-photos
-elementary-planner
 gnome-shell-extension-pomodoro
 redshift
 redshift-gtk
@@ -29,3 +28,4 @@ transmission-gtk
 gnome-weather
 gimp
 pdfarranger
+com.github.alainm23.planner
