@@ -1,9 +1,12 @@
 cc.arduino.arduinoide
-net.codeindustry.MasterPDFEditor
 us.zoom.Zoom
-org.gnome.FontManager
-com.github.huluti.ImCompressor
 com.bitwarden.desktop
 com.discordapp.Discord
+com.elsevier.MendeleyDesktop
+com.github.alainm23.planner
+com.github.huluti.ImCompressor
+com.github.marktext.marktext
 com.slack.Slack
 com.spotify.Client
+net.codeindustry.MasterPDFEditor
+org.gnome.FontManager
