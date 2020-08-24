@@ -8,5 +8,6 @@ com.github.huluti.ImCompressor
 com.github.marktext.marktext
 com.slack.Slack
 com.spotify.Client
+com.system76.Popsicle
 net.codeindustry.MasterPDFEditor
 org.gnome.FontManager
