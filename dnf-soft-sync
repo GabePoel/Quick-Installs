@@ -1,0 +1,26 @@
+#!/usr/bin/python3
+
+from os import path
+from os import system
+import sys
+import os
+import util
+
+here = os.getcwd()
+config = util.config
+
+flat_list = util.import_list(path.join(here, 'man', 'flat'))
+dnf_list = util.import_list(path.join(here, 'man', 'dnf'))
+git_list = util.import_list(path.join(here, 'man', 'git'))
+pip_list = util.import_list(path.join(here, 'man', 'pip'))
+
+util.flatpak_install(flat_list)
+util.dnf_install(dnf_list)
+util.git_install(git_list)
+util.pip_install(pip_list)
+
+system('sh ' + path.join(config, 'Some-Pretty-Boring-Shell-Scripts', 'make-all-executable'))
+kp = path.join(config, 'Korla-Plus')
+system('cd ' + kp + ' && python3 ' + path.join(kp, 'install.py') + ' link')
+ls = path.join(config, 'Lapidarium-Shell')
+system('cd ' + ls + ' && python3 ' + path.join(ls, 'install.py') + ' link')
