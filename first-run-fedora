@@ -49,7 +49,7 @@ system(
 system('fix-zoom')
 system('fix-ulauncher')
 system('sudo dnf install nodejs npm make git')
-system('sudo npm install typescript')
+system('sudo npm install -g typescript@next')
 system('cd ~/Desktop && ' +
     'git clone https://github.com/pop-os/shell && ' +
     'cd shell && ' +

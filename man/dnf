@@ -33,3 +33,4 @@ python3-devel
 gfortran
 blas-devel
 lapack-devel
+nutty
