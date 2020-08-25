@@ -28,4 +28,8 @@ transmission-gtk
 gnome-weather
 gimp
 pdfarranger
-com.github.alainm23.planner
+fira-code-fonts
+python3-devel
+gfortran
+blas-devel
+lapack-devel
