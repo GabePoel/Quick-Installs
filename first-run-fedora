@@ -32,6 +32,8 @@ system('flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flat
 util.flatpak_install(flat_list)
 util.pip_install(pip_list)
 util.dnf_install(dnf_list)
+system('sudo npm install -g typescript@next')
+system('sudo npm install -g nativefier')
 util.web_install(web_list)
 
 system('sudo rpm --import https://packagecloud.io/shiftkey/desktop/gpgkey &&' +
@@ -49,7 +51,6 @@ system(
 system('fix-zoom')
 system('fix-ulauncher')
 system('sudo dnf install nodejs npm make git')
-system('sudo npm install -g typescript@next')
 system('cd ~/Desktop && ' +
     'git clone https://github.com/pop-os/shell && ' +
     'cd shell && ' +
