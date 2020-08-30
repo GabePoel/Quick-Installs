@@ -1,11 +1,12 @@
 import gi
 import os
+import util
 from os import system
 from os import path
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
-util.checkdir('~/.local/share/electron-suite')
+util.check_dir('~/.local/share/electron-suite')
 
 def generate(address, name, icon, dark=True):
     here = os.getcwd()
@@ -29,7 +30,7 @@ def generate(address, name, icon, dark=True):
     if dark:
         system('nativefier ' + address + ' --name "' + name + '" --inject ~/Documents/Quick-Installs/resources/nativefier-dark.js --icon ' + path.join(here, 'icon.png') + ' --internal-urls ".*?"')
     else:
-        system('nativefier ' + address + ' --name "' + name + ' --icon ' + path.join(here, 'icon.png') + ' --internal-urls ".*?"')
+        system('nativefier ' + address + ' --name "' + name + '" --icon ' + path.join(here, 'icon.png') + ' --internal-urls ".*?"')
     system('cd ' + target_name + ' && chmod +x ./' + reduced_name)
     system('rm ' + path.join(here, 'icon.png'))
     system('mv ' + target_name + ' ~/.local/share/electron-suite/ -f')
