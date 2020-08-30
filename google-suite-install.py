@@ -64,11 +64,11 @@ to_make = [
     ['https://drawings.google.com', 'Google Drawings', 'google-drawings', True],
     ['https://calendar.google.com', 'Google Calendar', 'google-calendar', True],
     ['https://mail.google.com', 'Gmail', 'gmail', False],
-    ['https://photos.google.com', 'Google Photos', 'google-photos', True],
+    ['https://photos.google.com', 'Google Photos', 'google-photos', False],
     ['https://messages.google.com/web', 'Google Messages', 'google-messages', False],
     ['https://hangouts.google.com', 'Google Hangouts', 'google-hangouts', True],
     ['https://maps.google.com', 'Google Maps', 'google-maps', True],
-    ['https://earth.google.com', 'Google Earth', 'google-earth', True]
+    ['https://earth.google.com', 'Google Earth', 'google-earth', False]
 ]
 
 for tm in to_make:
