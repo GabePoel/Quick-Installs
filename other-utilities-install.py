@@ -1,11 +1,13 @@
 # These won't be too useful unless you have things configured exactly as I do
 
 import util
+import elec
 import os
 
-util.make_launcher('other-audible.desktop', 'Audible', 'xdg-open https://audible.com', "Amazon's audiobook service.", 'audible', categories=['Audio'])
-util.make_launcher('other-messenger.desktop', 'Messenger', 'xdg-open https://messenger.com', "Facebook instant messaging.", 'messengerfordesktop', categories=['InstantMessaging'])
-util.make_launcher('other-materials-project.desktop', 'Materials Project', 'xdg-open https://materialsproject.org', 'Computational materials prediction database.', 'materials-project', categories=['Science'])
+elec.electron_launcher('other-todoist.desktop', 'Todoist', 'todoist.com', 'todoist', 'To do list.', dark=False)
+elec.electron_launcher('other-audible.desktop', 'Audible', 'audible.com', 'audible', "Amazon's audiobook service.", categories=['Audio'], dark=False)
+elec.electron_launcher('other-messenger.desktop', 'Messenger', 'messenger.com', 'messengerfordesktop', "Facebook instant messaging.", categories=['InstantMessaging'])
+elec.electron_launcher('other-materials-project.desktop', 'Materials Project', 'materialsproject.org', 'materials-project', 'Computational materials prediction database.', categories=['Science'])
 
 home = os.path.expanduser('~')
 documents = os.path.join(home, 'Documents')

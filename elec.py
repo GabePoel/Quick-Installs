@@ -43,3 +43,11 @@ def get_icon(icon_name):
         return icon.get_filename()
     else:
         return None
+        
+def electron_launcher(launcher_name, app_name, address, icon, description, categories=['Network', 'Office', 'Utility'], dark=True):
+    generate(address, app_name, icon, dark)
+    reduced_name = ''
+    for n in app_name.split(' '):
+        reduced_name += n
+    target_name = reduced_name + '-linux-x64/' + reduced_name
+    util.make_launcher(launcher_name, app_name, util.home + '/.local/share/electron-suite/' + target_name, description, icon, categories=categories, actions=[])
