@@ -35,4 +35,8 @@ nutty
 dotnet-sdk-3.1
 aspnetcore-runtime-3.1
 dotnet-runtime-3.1
+<<<<<<< HEAD
+=======
+vlc
+>>>>>>> d1d621a50b723a5a17fbdcd94b452c73ee7fe519
 npm
