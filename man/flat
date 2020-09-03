@@ -11,3 +11,6 @@ com.spotify.Client
 com.system76.Popsicle
 net.codeindustry.MasterPDFEditor
 org.gnome.FontManager
+org.gtk.Gtk3theme.Materia
+org.gtk.Gtk3theme.Materia-dark
+org.gtk.Gtk3theme.Materia-dark-compact
