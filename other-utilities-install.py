@@ -11,6 +11,7 @@ elec.electron_launcher('other-materials-project.desktop', 'Materials Project', '
 elec.electron_launcher('other-oura.desktop', 'Oura', 'cloud.ouraring.com', 'oura', 'Sleep tracking and health.', categories=['Health'], dark=False)
 elec.electron_launcher('other-headspace.desktop', 'Headspace', 'my.headspace.com', 'headspace', 'Guided meditations.', categories=['Health'], dark=False)
 elec.electron_launcher('other-seconcephalon.desktop', 'Seconcephalon', 'seconcephalon.net', 'seconcephalon', 'Second brain.', categories=['Utilities', 'Health'])
+elec.electron_launcher('other-air-quality.desktop', 'AirNow', 'airnow.gov', 'weather', 'Air quality index (AQI) predictions.', categories=['Utilities', 'Health'])
 
 home = os.path.expanduser('~')
 documents = os.path.join(home, 'Documents')
