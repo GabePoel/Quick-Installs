@@ -1,4 +1,5 @@
 import util
+import elec
 import os
 from os import path
 from elec import generate
@@ -63,7 +64,7 @@ to_make = [
     ['https://slides.google.com', 'Google Slides', 'google-slides', True],
     ['https://drawings.google.com', 'Google Drawings', 'google-drawings', True],
     ['https://calendar.google.com', 'Google Calendar', 'google-calendar', True],
-    ['https://mail.google.com', 'Gmail', 'gmail', False],
+    ['https://mail.google.com', 'Gmail', 'gmail', True],
     ['https://photos.google.com', 'Google Photos', 'google-photos', False],
     ['https://messages.google.com/web', 'Google Messages', 'google-messages', False],
     ['https://hangouts.google.com', 'Google Hangouts', 'google-hangouts', True],
