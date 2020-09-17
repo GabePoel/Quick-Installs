@@ -9,6 +9,7 @@ from gi.repository import Gtk
 util.check_dir('~/.local/share/electron-suite')
 
 def generate(address, name, icon, dark=True):
+    util.check_dir('~/.local/share/electron-suite')
     here = os.getcwd()
     reduced_name = ''
     for n in name.split(' '):
@@ -31,6 +32,18 @@ def generate(address, name, icon, dark=True):
         system('nativefier ' + address + ' --name "' + name + '" --inject ~/Documents/Quick-Installs/resources/nativefier-dark.js --icon ' + path.join(here, 'icon.png') + ' --internal-urls ".*?"')
     else:
         system('nativefier ' + address + ' --name "' + name + '" --icon ' + path.join(here, 'icon.png') + ' --internal-urls ".*?"')
+    package = path.join(target_name, 'resources', 'app', 'package.json')
+    f = open(package, 'r')
+    s = f.readlines()[0]
+    i_start = s.find('"name":') + 7
+    s_remaining = s[i_start:]
+    i_end = s_remaining.find(',') + i_start
+    s_name = s[i_start + 1:i_end - 1]
+    s = s.replace(s_name, name)
+    f.close()
+    f = open(package, 'w')
+    f.write(s)
+    f.close()
     system('cd ' + target_name + ' && chmod +x ./' + reduced_name)
     system('rm ' + path.join(here, 'icon.png'))
     system('mv ' + target_name + ' ~/.local/share/electron-suite/ -f')
@@ -45,6 +58,7 @@ def get_icon(icon_name):
         return None
         
 def electron_launcher(launcher_name, app_name, address, icon, description, categories=['Network', 'Office', 'Utility'], dark=True):
+    util.check_dir('~/.local/share/electron-suite')
     generate(address, app_name, icon, dark)
     reduced_name = ''
     for n in app_name.split(' '):
