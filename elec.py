@@ -48,6 +48,15 @@ def generate(address, name, icon, dark=True):
     system('rm ' + path.join(here, 'icon.png'))
     system('mv ' + target_name + ' ~/.local/share/electron-suite/ -f')
     system('rm ' + target_name + ' -r')
+    ex_cont = "#!/bin/bash\n$HOME/.local/share/electron-suite/" + reduced_name + '-linux-x64' + '/' + reduced_name
+    ex_name = name.replace(' ', '-', 999).lower()
+    scripts = path.join(util.home, '.local', 'bin')
+    ex_name = path.join(scripts, ex_name)
+    ex = open(ex_name, 'w+')
+    ex.write(ex_cont)
+    ex.close()
+    system('chmod +x ' + ex_name)
+    print(ex_name)
     
 def get_icon(icon_name):
     icon_theme = Gtk.IconTheme.get_default()
