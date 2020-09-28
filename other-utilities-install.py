@@ -33,3 +33,4 @@ headspace_actions = [
 util.make_launcher('other-github.desktop', 'GitHub', 'xdg-open https://github.com', 'Online git repository service.', 'github', categories=['Office', 'Network', 'Utility'])
 util.make_launcher('other-wolfram-alpha.desktop', 'Wolfram Alpha', 'xdg-open https://wolframalpha.com', 'Online calculator.', 'wolfram-alpha', categories=['Science', 'Education'])
 util.make_launcher('other-jupyter.desktop', 'Jupyter', 'jupyter notebook', 'Interactive programming and data analysis.', 'jupyter-notebook', categories=['Science'])
+util.make_launcher('other-rescuetime.desktop', 'RescueTime', 'rescuetime', 'Time tracking and management.', 'blueclock', categories=['Utilities', 'Health'])
