@@ -1,8 +1,5 @@
 cc.arduino.arduinoide
-us.zoom.Zoom
 com.bitwarden.desktop
-com.discordapp.Discord
-com.elsevier.MendeleyDesktop
 com.github.alainm23.planner
 com.github.huluti.ImCompressor
 com.github.marktext.marktext
@@ -10,7 +7,6 @@ com.slack.Slack
 com.spotify.Client
 com.system76.Popsicle
 net.codeindustry.MasterPDFEditor
-org.gnome.FontManager
 org.gtk.Gtk3theme.Materia
 org.gtk.Gtk3theme.Materia-dark
 org.gtk.Gtk3theme.Materia-dark-compact
