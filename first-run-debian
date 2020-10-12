@@ -1,2 +1,12 @@
 #!/usr/bin/python3
 
+from os import path
+from os import system
+import sys
+import os
+import util
+
+here = os.getcwd()
+
+pip_list = util.import_list(path.join(here, 'man', 'pip'))
+util.pip_install(pip_list)

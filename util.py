@@ -2,10 +2,6 @@ from os import path
 from os import system
 import os
 
-os.system('pip3 install wget --user')
-
-import wget
-
 home = path.expanduser('~')
 config = path.join(home, 'Documents', 'Configuration')
 
@@ -97,6 +93,8 @@ def check_dir(fp):
     return fp
 
 def web_install(address_list, extension='.rpm'):
+    os.system('pip3 install wget --user')
+    import wget
     for address in address_list:
         check_dir(path.join(home, 'Documents', 'temp-install'))
         fp = path.join(home, 'Documents', 'temp-install', 'inst' + extension)
