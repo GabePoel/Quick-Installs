@@ -5,7 +5,7 @@ import os
 home = path.expanduser('~')
 config = path.join(home, 'Documents', 'Configuration')
 
-def make_launcher(file_name, app_name, executable, comment, icon, categories=[], actions=[]):
+def make_launcher(file_name, app_name, executable, comment, icon, categories=[], actions=[], notifications=True):
     launcher_path = path.join(home, '.local', 'share', 'applications', file_name)
     launcher = open(launcher_path, 'w')
     launcher_string = (
@@ -17,6 +17,10 @@ def make_launcher(file_name, app_name, executable, comment, icon, categories=[],
         "Type=Application\n"
         "Categories=" + category_string(categories) + "\n"
     )
+    if notifications:
+        launcher_string += 'X-GNOME-UsesNotifications=true\n'
+    else:
+        launcher_string += 'X-GNOME-UsesNotifications=false\n'
     if len(actions) > 0:
         launcher_string += "Actions="
         for action in actions:

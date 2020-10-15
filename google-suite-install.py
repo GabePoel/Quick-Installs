@@ -72,8 +72,8 @@ to_make = [
     ['https://earth.google.com', 'Google Earth', 'google-earth', False]
 ]
 
-for tm in to_make:
-    generate(tm[0], tm[1], tm[2], tm[3])
+# for tm in to_make:
+#     generate(tm[0], tm[1], tm[2], tm[3])
 
 drive_actions = []
 mail_actions = []
@@ -86,16 +86,20 @@ slides_actions = []
 drawings_actions = []
 earth_actions = []
 
-util.make_launcher('google-docs.desktop', 'Google Docs', util.home + '/.local/share/electron-suite/GoogleDocs-linux-x64/GoogleDocs', "Google's document writer.", 'google-docs', categories=['Office'], actions=docs_actions)
-util.make_launcher('google-sheets.desktop', 'Google Sheets', util.home + '/.local/share/electron-suite/GoogleSheets-linux-x64/GoogleSheets', "Google's spreadsheet editor.", 'google-sheets', categories=['Office'], actions=sheets_actions)
-util.make_launcher('google-forms.desktop', 'Google Forms', util.home + '/.local/share/electron-suite/GoogleForms-linux-x64/GoogleForms', "Google's form maker.", 'google-forms', categories=['Office'], actions=forms_actions)
-util.make_launcher('google-slides.desktop', 'Google Slides', util.home + '/.local/share/electron-suite/GoogleSlides-linux-x64/GoogleSlides', "Google's slideshow maker.", 'google-slides', categories=['Office'], actions=slides_actions)
-util.make_launcher('google-drawings.desktop', 'Google Drawings', util.home + '/.local/share/electron-suite/GoogleDrawings-linux-x64/GoogleDrawings', "Google's art maker.", 'chrome-google-drawings', categories=['Office', 'Media', 'Graphics'], actions=drawings_actions)
-util.make_launcher('google-calendar.desktop', 'Google Calendar', util.home + '/.local/share/electron-suite/GoogleCalendar-linux-x64/GoogleCalendar', "Google's calendar.", 'google-calendar', categories=['Network', 'Office'], actions=calendar_actions)
-util.make_launcher('google-drive.desktop', 'Google Drive', util.home + '/.local/share/electron-suite/GoogleDrive-linux-x64/GoogleDrive', "Online drive.", 'google-drive', categories=['Network', 'Utility', 'Office'], actions=drive_actions)
-util.make_launcher('google-mail.desktop', 'Gmail', util.home + '/.local/share/electron-suite/Gmail-linux-x64/Gmail', "Google's email service.", 'gmail', categories=['Network', 'Email', 'Office', 'InstantMessaging'], actions=mail_actions)
-util.make_launcher('google-photos.desktop', 'Google Photos', util.home + '/.local/share/electron-suite/GooglePhotos-linux-x64/GooglePhotos', "Google's photo library.", 'google-photos', categories=['Graphics', 'Media'], actions=photos_actions)
-util.make_launcher('google-messages.desktop', 'Messages', util.home + '/.local/share/electron-suite/GoogleMessages-linux-x64/GoogleMessages', "Google's SMS service.", 'google-messages', categories=['Network', 'Office', 'InstantMessaging'])
-util.make_launcher('google-hangouts.desktop', 'Google Hangouts', util.home + '/.local/share/electron-suite/GoogleHangouts-linux-x64/GoogleHangouts', "Google's instant message service.", 'google-hangouts', categories=['Network', 'Office', 'InstantMessaging'])
-util.make_launcher('google-maps.desktop', 'Google Maps', util.home + '/.local/share/electron-suite/GoogleMaps-linux-x64/GoogleMaps', "Google's map service.", 'google-maps', categories=['Utility'])
-util.make_launcher('google-earth.desktop', 'Google Earth', util.home + '/.local/share/electron-suite/GoogleEarth-linux-x64/GoogleEarth', "Around the world with Google.", 'google-earth', categories=['Utility'], actions=earth_actions)
+
+elec.electron_launcher('google-mail.desktop', 'Gmail', 'https://mail.google.com', 'gmail', "Email that's intuitive, efficient, and useful.", categories=['Network', 'Email', 'Office', 'InstantMessaging'], all_urls=False, dark=True, flags="--counter --internal-urls .*?\.google\.*?|.*?auth\.berkeley\.*? --tray --single-instance", style='gmail', force_style=True, notifications=True)
+elec.electron_launcher('google-calendar.desktop', 'Google Calendar', 'https://calendar.google.com', 'google-calendar', "A time-management and scheduling calendar service developed by Google.", categories=['Network', 'Office'], all_urls=False, dark=True, flags="--counter --internal-urls .*?\.google\.*?|.*?auth\.berkeley\.*? --tray --single-instance", style='calendar', force_style=True, notifications=True)
+elec.electron_launcher('google-messages.desktop', 'Messages', 'https://messages.google.com/web', 'internet-chat', "Simple, helpful messaging by Google.", categories=['Network', 'InstantMessaging'], all_urls=True, dark=False, flags="--counter --tray --single-instance", notifications=True)
+# util.make_launcher('google-docs.desktop', 'Google Docs', util.home + '/.local/share/electron-suite/GoogleDocs-linux-x64/GoogleDocs', "Google's document writer.", 'google-docs', categories=['Office'], actions=docs_actions)
+# util.make_launcher('google-sheets.desktop', 'Google Sheets', util.home + '/.local/share/electron-suite/GoogleSheets-linux-x64/GoogleSheets', "Google's spreadsheet editor.", 'google-sheets', categories=['Office'], actions=sheets_actions)
+# util.make_launcher('google-forms.desktop', 'Google Forms', util.home + '/.local/share/electron-suite/GoogleForms-linux-x64/GoogleForms', "Google's form maker.", 'google-forms', categories=['Office'], actions=forms_actions)
+# util.make_launcher('google-slides.desktop', 'Google Slides', util.home + '/.local/share/electron-suite/GoogleSlides-linux-x64/GoogleSlides', "Google's slideshow maker.", 'google-slides', categories=['Office'], actions=slides_actions)
+# util.make_launcher('google-drawings.desktop', 'Google Drawings', util.home + '/.local/share/electron-suite/GoogleDrawings-linux-x64/GoogleDrawings', "Google's art maker.", 'chrome-google-drawings', categories=['Office', 'Media', 'Graphics'], actions=drawings_actions)
+# util.make_launcher('google-calendar.desktop', 'Google Calendar', util.home + '/.local/share/electron-suite/GoogleCalendar-linux-x64/GoogleCalendar', "Google's calendar.", 'google-calendar', categories=['Network', 'Office'], actions=calendar_actions)
+# util.make_launcher('google-drive.desktop', 'Google Drive', util.home + '/.local/share/electron-suite/GoogleDrive-linux-x64/GoogleDrive', "Online drive.", 'google-drive', categories=['Network', 'Utility', 'Office'], actions=drive_actions)
+# util.make_launcher('google-mail.desktop', 'Gmail', util.home + '/.local/share/electron-suite/Gmail-linux-x64/Gmail', "Google's email service.", 'gmail', categories=['Network', 'Email', 'Office', 'InstantMessaging'], actions=mail_actions)
+# util.make_launcher('google-photos.desktop', 'Google Photos', util.home + '/.local/share/electron-suite/GooglePhotos-linux-x64/GooglePhotos', "Google's photo library.", 'google-photos', categories=['Graphics', 'Media'], actions=photos_actions)
+# util.make_launcher('google-messages.desktop', 'Messages', util.home + '/.local/share/electron-suite/GoogleMessages-linux-x64/GoogleMessages', "Google's SMS service.", 'google-messages', categories=['Network', 'Office', 'InstantMessaging'])
+# util.make_launcher('google-hangouts.desktop', 'Google Hangouts', util.home + '/.local/share/electron-suite/GoogleHangouts-linux-x64/GoogleHangouts', "Google's instant message service.", 'google-hangouts', categories=['Network', 'Office', 'InstantMessaging'])
+# util.make_launcher('google-maps.desktop', 'Google Maps', util.home + '/.local/share/electron-suite/GoogleMaps-linux-x64/GoogleMaps', "Google's map service.", 'google-maps', categories=['Utility'])
+# util.make_launcher('google-earth.desktop', 'Google Earth', util.home + '/.local/share/electron-suite/GoogleEarth-linux-x64/GoogleEarth', "Around the world with Google.", 'google-earth', categories=['Utility'], actions=earth_actions)
