@@ -76,7 +76,7 @@ def get_icon(icon_name):
     else:
         return None
         
-def electron_launcher(launcher_name, app_name, address, icon, description, categories=['Network', 'Office', 'Utility'], dark=True, all_urls=True, flags='', style=None, force_style=False, actions=[], notifications=True):
+def electron_launcher(launcher_name, app_name, address, icon, description, categories=['Network', 'Office', 'Utility'], dark=True, all_urls=True, flags='', styles=[], force_style=False, actions=[], notifications=True):
     util.check_dir(suite)
     generate(address, app_name, icon, dark=dark, all_urls=all_urls, flags=flags)
     reduced_name = ''
@@ -85,21 +85,24 @@ def electron_launcher(launcher_name, app_name, address, icon, description, categ
     target_name = reduced_name + '/' + reduced_name
     util.make_launcher(launcher_name, app_name, util.home + '/.local/share/electron-suite/' + target_name, description, icon, categories=categories, actions=actions, notifications=notifications)
     if dark:
-        if style is None:
-            style = 'default'
+        if len(styles) == 0:
+            styles = ['default']
         print('updating style')
-        css_path = path.join(os.getcwd(), 'resources', style + '.css')
-        css_file = open(css_path)
-        css_lines = css_file.readlines()
+        all_lines = []
+        for style in styles:
+            css_path = path.join(os.getcwd(), 'resources', style + '.css')
+            css_file = open(css_path)
+            css_lines = css_file.readlines()
+            if force_style:
+                css_lines = [line[:-2] + ' !important;\n' if len(line) > 1 and line[-2] == ';' and not '!important' in line else line for line in css_lines]
+            css_lines = ["\t'" + line[:-1] + "',\n" for line in css_lines]
+            css_lines[-1] = css_lines[-1][:-1]
+            css_file.close()
+            all_lines = all_lines + css_lines
         js_path = util.home + '/.local/share/electron-suite/' + reduced_name + '/resources/app/inject/inject.js'
         js_file = open(js_path)
         js_lines = js_file.readlines()
-        if force_style:
-            css_lines = [line[:-2] + ' !important;\n' if len(line) > 1 and line[-2] == ';' and not '!important' in line else line for line in css_lines]
-        css_lines = ["\t'" + line[:-1] + "',\n" for line in css_lines]
-        css_lines[-1] = css_lines[-1][:-1]
-        js_lines = [js_lines[0]] + css_lines + js_lines[1:]
-        css_file.close()
+        js_lines = [js_lines[0]] + all_lines + js_lines[1:]
         js_file.close()
         js_file = open(js_path, 'w')
         js_string = ''.join(js_lines)
