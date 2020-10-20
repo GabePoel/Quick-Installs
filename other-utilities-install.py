@@ -4,7 +4,12 @@ import util
 import elec
 import os
 
-elec.electron_launcher('other-todoist.desktop', 'Todoist', 'todoist.com', 'todoist', 'To do list.', dark=False)
+# elec.electron_launcher('other-todoist.desktop', 'Todoist', 'todoist.com', 'todoist', 'To do list.', dark=False)
+elec.electron_launcher('audible.desktop', 'Audible', 'https://audible.com', 'application-x-mobi8-ebook', 'Audiobooks by Amazon.', categories=['Media'], all_urls=True, dark=False, flags='--tray --single-instance --app-version "0.3"', notifications=True, styles='audible')
+elec.electron_launcher('todoist.desktop', 'Todoist', 'https://todoist.com', 'todoist', 'Organize, plan, and collaborate on tasks and projects.', categories=['Productivity', 'Office', 'Utility'], all_urls=True, dark=True, flags='--tray --single-instance --app-version "0.2"', notifications=True)
+elec.electron_launcher('messenger.desktop', 'Messenger', 'https://messenger.com', 'messengerfordesktop', 'Chat with your Facebook friends.', categories=['Social'], dark=False, flags='--tray --single-instance --app-version "0.2"', notifications=True, force_style=True)
+# elec.electron_launcher('google-messages.desktop', 'Messages', 'https://messages.google.com/web', 'internet-chat', "Simple, helpful messaging by Google.", categories=['Network', 'InstantMessaging'], all_urls=True, dark=False, flags="--counter --tray --single-instance --app-version '0.6'", notifications=True)
+
 # elec.electron_launcher('other-audible.desktop', 'Audible', 'audible.com', 'audible', "Amazon's audiobook service.", categories=['Audio'], dark=False)
 # elec.electron_launcher('other-messenger.desktop', 'Messenger', 'messenger.com', 'messengerfordesktop', "Facebook instant messaging.", categories=['InstantMessaging'])
 # elec.electron_launcher('other-materials-project.desktop', 'Materials Project', 'materialsproject.org', 'materials-project', 'Computational materials prediction database.', categories=['Science'])

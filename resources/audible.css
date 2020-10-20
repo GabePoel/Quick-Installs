@@ -1,0 +1,4326 @@
+/* User-Agent Style */
+html {
+    background-color: #242729 !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #242729;
+}
+html, body, input, textarea, select, button {
+    border-color: #ada18d;
+    color: #ffffff;
+}
+a {
+    color: #4ddaff;
+}
+table {
+    border-color: #7e898d;
+}
+::placeholder {
+    color: #fffff2;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #808900 !important;
+    color: #ffffff !important;
+}
+::-webkit-scrollbar {
+    background-color: #303536;
+    color: #fff6e5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #686f73;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #838d93;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #6c757a;
+}
+::-webkit-scrollbar-corner {
+    background-color: #242729;
+}
+* {
+    scrollbar-color: #303536 #686f73;
+}
+::selection {
+    background-color: #0073ff !important;
+    color: #ffffff !important;
+}
+::-moz-selection {
+    background-color: #0073ff !important;
+    color: #ffffff !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble {
+    filter: invert(100%) hue-rotate(180deg) brightness(150%) contrast(90%) !important;
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #b97d00 !important;
+    border-color: #ffff1c !important;
+    color: #ffffff !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #181a1b;
+   --darkreader-neutral-text: #e8e6e3;
+   --darkreader-selection-background: #0073ff;
+   --darkreader-selection-text: #ffffff;
+}
+
+/* Modified CSS */
+abbr {
+    border-bottom-color: initial;
+}
+img {
+    border-color: initial;
+}
+fieldset {
+    border-color: initial;
+}
+.bc-pub-offscreen {
+    border-color: initial;
+}
+.bc-color-primary {
+    color: rgb(255, 255, 39);
+}
+.bc-color-active {
+    color: rgb(255, 255, 255);
+}
+.bc-color-progress {
+    color: rgb(255, 255, 39);
+}
+.bc-color-base {
+    color: rgb(255, 255, 255);
+}
+.bc-color-secondary {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-color-tertiary {
+    color: rgba(255, 255, 255, 0.35);
+}
+.bc-color-link {
+    color: rgb(115, 255, 255);
+}
+.bc-color-error {
+    color: rgb(255, 161, 123);
+}
+.bc-color-price {
+    color: rgb(255, 255, 255);
+}
+.bc-color-pre-order {
+    color: rgb(255, 113, 227);
+}
+.bc-color-inverse {
+    color: rgb(255, 255, 255);
+}
+.bc-color-member-notenrolled {
+    color: rgb(204, 255, 255);
+}
+.bc-color-member-silver {
+    color: rgb(236, 224, 204);
+}
+.bc-color-member-gold {
+    color: rgb(255, 255, 152);
+}
+.bc-color-member-platinum {
+    color: rgb(242, 228, 210);
+}
+.bc-color-background-base {
+    background-color: rgb(36, 39, 41);
+}
+.bc-color-background-secondary {
+    background-color: rgb(44, 48, 50);
+}
+.bc-color-background-tertiary {
+    background-color: rgb(54, 59, 62);
+}
+.bc-color-background-active,
+.bc-switch-row .bc-switch-input:checked + .bc-switch {
+    background-color: rgb(22, 24, 26);
+}
+.bc-color-background-progress {
+    background-color: rgb(255, 192, 0);
+}
+.bc-color-background-error {
+    background-color: rgb(218, 53, 21);
+}
+.bc-color-background-member-notenrolled {
+    background-color: rgb(75, 173, 153);
+}
+.bc-color-background-member-silver {
+    background-color: rgb(71, 77, 80);
+}
+.bc-color-background-member-gold {
+    background-color: rgb(213, 156, 35);
+}
+.bc-color-background-member-platinum {
+    background-color: rgb(78, 89, 115);
+}
+.bc-color-divider-base,
+.bc-divider {
+    border-color: rgba(200, 186, 165, 0.35);
+}
+.bc-color-divider-secondary,
+.bc-divider.bc-divider-secondary {
+    border-color: rgba(200, 186, 165, 0.15);
+}
+.bc-color-track-base {
+    background-color: rgb(22, 24, 26);
+}
+.bc-color-border-base {
+    border-color: rgba(200, 186, 165, 0.35);
+}
+.bc-color-border-secondary {
+    border-color: rgba(200, 186, 165, 0.15);
+}
+.bc-color-border-focus:focus {
+    border-color: rgba(200, 186, 165, 0.65);
+}
+.bc-color-border-error {
+    border-color: rgb(255, 65, 27);
+}
+.bc-color-border-active {
+    border-color: rgb(200, 186, 165);
+}
+.bc-palette-inverse .bc-color-primary {
+    color: rgb(255, 255, 39);
+}
+.bc-palette-inverse .bc-color-active {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-progress {
+    color: rgb(255, 255, 39);
+}
+.bc-palette-inverse .bc-color-base {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-secondary {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-color-tertiary {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-color-link {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-error {
+    color: rgb(255, 161, 123);
+}
+.bc-palette-inverse .bc-color-price {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-pre-order {
+    color: rgb(255, 113, 227);
+}
+.bc-palette-inverse .bc-color-inverse {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-member-notenrolled {
+    color: rgb(191, 255, 255);
+}
+.bc-palette-inverse .bc-color-member-silver {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-member-gold {
+    color: rgb(255, 255, 144);
+}
+.bc-palette-inverse .bc-color-member-platinum {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-color-background-base {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-color-background-secondary {
+    background-color: rgb(44, 47, 48);
+}
+.bc-palette-inverse .bc-color-background-tertiary {
+    background-color: rgb(53, 57, 60);
+}
+.bc-palette-inverse .bc-color-background-active,
+.bc-palette-inverse .bc-switch-row .bc-switch-input:checked + .bc-switch,
+.bc-switch-row .bc-palette-inverse .bc-switch-input:checked + .bc-switch {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-color-background-progress {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-color-background-error {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-color-background-member-notenrolled {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-color-background-member-silver {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-color-background-member-gold {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-color-background-member-platinum {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-color-divider-base,
+.bc-palette-inverse .bc-divider {
+    border-color: rgba(72, 78, 81, 0.35);
+}
+.bc-palette-inverse .bc-color-divider-secondary,
+.bc-palette-inverse .bc-divider.bc-divider-secondary {
+    border-color: rgba(72, 78, 81, 0.15);
+}
+.bc-palette-inverse .bc-color-track-base {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-color-border-base {
+    border-color: rgba(72, 78, 81, 0.35);
+}
+.bc-palette-inverse .bc-color-border-secondary {
+    border-color: rgba(72, 78, 81, 0.15);
+}
+.bc-palette-inverse .bc-color-border-focus:focus {
+    border-color: rgb(255, 168, 0);
+}
+.bc-palette-inverse .bc-color-border-error {
+    border-color: rgb(255, 65, 27);
+}
+.bc-palette-inverse .bc-color-border-active {
+    border-color: rgb(72, 78, 81);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-primary {
+    color: rgb(255, 255, 39);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-active {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-progress {
+    color: rgb(255, 255, 39);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-base {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-secondary {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-tertiary {
+    color: rgba(255, 255, 255, 0.35);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-link {
+    color: rgb(115, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-error {
+    color: rgb(255, 161, 123);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-price {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-pre-order {
+    color: rgb(255, 113, 227);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-inverse {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-member-notenrolled {
+    color: rgb(204, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-member-silver {
+    color: rgb(236, 224, 204);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-member-gold {
+    color: rgb(255, 255, 152);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-member-platinum {
+    color: rgb(242, 228, 210);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-base {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-secondary {
+    background-color: rgb(44, 48, 50);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-tertiary {
+    background-color: rgb(54, 59, 62);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-active,
+.bc-palette-inverse .bc-palette-default .bc-switch-row .bc-switch-input:checked + .bc-switch,
+.bc-switch-row .bc-palette-inverse .bc-palette-default .bc-switch-input:checked + .bc-switch {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-progress {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-error {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-member-notenrolled {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-member-silver {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-member-gold {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-background-member-platinum {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-divider-base,
+.bc-palette-inverse .bc-palette-default .bc-divider {
+    border-color: rgba(200, 186, 165, 0.35);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-divider-secondary,
+.bc-palette-inverse .bc-palette-default .bc-divider.bc-divider-secondary {
+    border-color: rgba(200, 186, 165, 0.15);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-track-base {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-border-base {
+    border-color: rgba(200, 186, 165, 0.35);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-border-secondary {
+    border-color: rgba(200, 186, 165, 0.15);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-border-focus:focus {
+    border-color: rgba(200, 186, 165, 0.65);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-border-error {
+    border-color: rgb(255, 65, 27);
+}
+.bc-palette-inverse .bc-palette-default .bc-color-border-active {
+    border-color: rgb(200, 186, 165);
+}
+.bc-color-background-white {
+    background-color: rgb(36, 39, 41);
+}
+.bc-color-background-black {
+    background-color: rgb(22, 24, 26);
+}
+.bc-pub-offscreen {
+    border-color: initial;
+}
+.bc-accordion .bc-accordion-header {
+    text-decoration-color: initial;
+}
+.bc-accordion .bc-accordion-header:hover {
+    text-decoration-color: initial;
+}
+.bc-accordion.bc-accordion-styled {
+    border-color: rgb(90, 98, 102);
+}
+.bc-accordion.bc-accordion-styled .bc-accordion-row:last-child {
+    border-color: initial;
+}
+.bc-accordion.bc-accordion-borderless {
+    border-color: initial;
+}
+.bc-accordion.bc-accordion-borderless .bc-accordion-row {
+    border-color: initial;
+}
+.bc-autocomplete-suggestions-wrapper {
+    background-color: rgb(36, 39, 41);
+}
+.bc-autocomplete-suggestions-wrapper .bc-autocomplete-suggestion-row.bc-autocomplete-suggestion-link.bc-autocomplete-selected,
+.bc-autocomplete-suggestions-wrapper .bc-autocomplete-suggestion-row.bc-autocomplete-suggestion-link.bc-link:hover,
+.bc-autocomplete-suggestions-wrapper .bc-autocomplete-suggestion-row.bc-autocomplete-suggestion-link:hover {
+    background-color: rgb(44, 48, 50);
+    color: rgb(255, 255, 255);
+}
+.bc-autocomplete.bc-autocomplete-has-icon .bc-icon {
+    background-image: initial;
+    background-color: initial;
+    border-color: initial;
+}
+.bc-disabled-overlay {
+    background-color: rgba(36, 39, 41, 0.8);
+}
+.bc-audio-button {
+    border-color: rgb(72, 78, 81);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 3px 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    outline-color: initial;
+}
+.bc-audio-button .bc-icon {
+    color: rgb(255, 255, 255);
+}
+.bc-audio-button:active {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.bc-button {
+    text-decoration-color: initial;
+}
+.bc-button .bc-button-text {
+    background-image: initial;
+    background-color: initial;
+    border-color: initial;
+    color: rgb(255, 255, 255);
+}
+.bc-button .bc-button-text.bc-focus-mouse {
+    outline-color: initial;
+}
+.bc-button .bc-button-text:hover {
+    text-decoration-color: initial;
+}
+.bc-button-input {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-button-input.bc-focus-mouse {
+    outline-color: initial;
+}
+.bc-button-secondary {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-button-secondary.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-button-secondary.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-secondary.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-button-secondary:hover {
+        background-color: rgba(53, 57, 60, 0.05);
+    }
+    .bc-button-secondary:hover.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-button-secondary:active {
+    background-color: rgba(53, 57, 60, 0.2);
+}
+.bc-button-secondary:active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-button-secondary.bc-button-disabled.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-secondary.bc-button-disabled:hover {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-button-secondary.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-secondary .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-secondary .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-primary {
+    background-color: rgb(255, 192, 0);
+}
+.bc-button-primary.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-button-primary.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-primary.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-button-primary:hover {
+        background-color: rgb(240, 168, 0);
+    }
+    .bc-button-primary:hover.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-button-primary:active {
+    background-color: rgb(255, 155, 0);
+}
+.bc-button-primary:active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-button-primary.bc-button-disabled {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-button-primary.bc-button-disabled.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-primary.bc-button-disabled:hover {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-button-primary.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-primary .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-primary .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-preorder {
+    background-color: rgb(181, 0, 114);
+}
+.bc-button-preorder.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-button-preorder.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-preorder.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-button-preorder:hover {
+        background-color: rgb(240, 62, 163);
+    }
+    .bc-button-preorder:hover.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-button-preorder:active {
+    background-color: rgb(120, 0, 63);
+}
+.bc-button-preorder:active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-button-preorder.bc-button-disabled.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-preorder.bc-button-disabled:hover {
+    background-color: rgb(181, 0, 114);
+}
+.bc-button-preorder.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-preorder .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-preorder .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+.bc-button-active {
+    background-color: rgb(0, 212, 212);
+}
+.bc-button-active.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-button-active.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-active.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-button-active:hover {
+        background-color: rgb(0, 231, 231);
+    }
+    .bc-button-active:hover.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-button-active:active {
+    background-color: rgb(0, 191, 191);
+}
+.bc-button-active:active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-button-active.bc-button-disabled.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-active.bc-button-disabled:hover {
+    background-color: rgb(0, 212, 212);
+}
+.bc-button-active.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-active .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-active .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-outline {
+    background-color: transparent;
+    border-color: rgba(200, 186, 165, 0.25);
+}
+.bc-button-outline.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-button-outline.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-outline.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-button-outline:hover {
+        background-color: rgba(53, 57, 60, 0.05);
+    }
+    .bc-button-outline:hover.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-button-outline:active {
+    background-color: rgba(53, 57, 60, 0.2);
+}
+.bc-button-outline:active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-button-outline.bc-button-disabled.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-outline.bc-button-disabled:hover {
+    background-color: transparent;
+}
+.bc-button-outline.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-outline .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-outline .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-simple {
+    background-color: transparent;
+}
+.bc-button-simple.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-button-simple.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-simple.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-button-simple:hover {
+        background-color: rgba(53, 57, 60, 0.05);
+    }
+    .bc-button-simple:hover.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-button-simple:active {
+    background-color: rgba(53, 57, 60, 0.2);
+}
+.bc-button-simple:active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-button-simple.bc-button-disabled.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-simple.bc-button-disabled:hover {
+    background-color: transparent;
+}
+.bc-button-simple.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-button-simple .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-button-simple .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-button-secondary {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-button-secondary.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-secondary.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-secondary.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-button-secondary:hover {
+        background-color: rgba(44, 48, 50, 0.35);
+    }
+    .bc-palette-inverse .bc-button-secondary:hover.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-button-secondary:active {
+    background-color: rgba(44, 48, 50, 0.25);
+}
+.bc-palette-inverse .bc-button-secondary:active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-secondary.bc-button-disabled.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-secondary.bc-button-disabled:hover {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-button-secondary.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-secondary .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-secondary .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-primary {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-button-primary.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-primary.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-primary.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-button-primary:hover {
+        background-color: rgb(240, 168, 0);
+    }
+    .bc-palette-inverse .bc-button-primary:hover.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-button-primary:active {
+    background-color: rgb(255, 155, 0);
+}
+.bc-palette-inverse .bc-button-primary:active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-primary.bc-button-disabled {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-button-primary.bc-button-disabled.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-primary.bc-button-disabled:hover {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-button-primary.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-primary .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-primary .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-button-preorder {
+    background-color: rgb(181, 0, 114);
+}
+.bc-palette-inverse .bc-button-preorder.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-preorder.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-preorder.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-button-preorder:hover {
+        background-color: rgb(240, 62, 163);
+    }
+    .bc-palette-inverse .bc-button-preorder:hover.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-button-preorder:active {
+    background-color: rgb(120, 0, 63);
+}
+.bc-palette-inverse .bc-button-preorder:active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-preorder.bc-button-disabled.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-preorder.bc-button-disabled:hover {
+    background-color: rgb(181, 0, 114);
+}
+.bc-palette-inverse .bc-button-preorder.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-preorder .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-preorder .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-active {
+    background-color: rgb(0, 212, 212);
+}
+.bc-palette-inverse .bc-button-active.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-active.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-active.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-button-active:hover {
+        background-color: rgb(0, 231, 231);
+    }
+    .bc-palette-inverse .bc-button-active:hover.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-button-active:active {
+    background-color: rgb(0, 191, 191);
+}
+.bc-palette-inverse .bc-button-active:active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-active.bc-button-disabled.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-active.bc-button-disabled:hover {
+    background-color: rgb(0, 212, 212);
+}
+.bc-palette-inverse .bc-button-active.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-active .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-active .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-button-outline {
+    background-color: transparent;
+    border-color: rgba(72, 78, 81, 0.25);
+}
+.bc-palette-inverse .bc-button-outline.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-outline.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-outline.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-button-outline:hover {
+        background-color: rgba(44, 48, 50, 0.35);
+    }
+    .bc-palette-inverse .bc-button-outline:hover.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-button-outline:active {
+    background-color: rgba(44, 48, 50, 0.25);
+}
+.bc-palette-inverse .bc-button-outline:active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-outline.bc-button-disabled.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-outline.bc-button-disabled:hover {
+    background-color: transparent;
+}
+.bc-palette-inverse .bc-button-outline.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-outline .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-outline .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-simple {
+    background-color: transparent;
+}
+.bc-palette-inverse .bc-button-simple.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-simple.bc-button-selected .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-simple.bc-button-selected .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-button-simple:hover {
+        background-color: rgba(44, 48, 50, 0.35);
+    }
+    .bc-palette-inverse .bc-button-simple:hover.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-button-simple:active {
+    background-color: rgba(44, 48, 50, 0.25);
+}
+.bc-palette-inverse .bc-button-simple:active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-button-simple.bc-button-disabled.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-simple.bc-button-disabled:hover {
+    background-color: transparent;
+}
+.bc-palette-inverse .bc-button-simple.bc-button-disabled:hover.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-button-simple .bc-button-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-button-simple .bc-button-text .bc-button-icon.bc-svg-icon-override {
+    background-color: rgb(36, 39, 41);
+}
+.bc-button-container-horizontal .bc-button-group-unspaced .bc-buttonGroup-button:last-child {
+    border-left-color: initial;
+}
+.bc-button-container-horizontal .bc-button-group-unspaced .bc-buttonGroup-button:not(:first-child):not(:last-child) {
+    border-left-color: initial;
+}
+.bc-button-container-vertical .bc-button-group-unspaced .bc-buttonGroup-button:last-child {
+    border-top-color: initial;
+}
+.bc-button-container-vertical .bc-button-group-unspaced .bc-buttonGroup-button:not(:first-child):not(:last-child) {
+    border-top-color: initial;
+}
+.bc-icon-button-tap-target {
+    background-image: initial;
+    background-color: initial;
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-focus-mouse {
+    outline-color: initial;
+}
+.bc-icon-button {
+    text-decoration-color: initial;
+}
+.bc-icon-button:hover {
+    text-decoration-color: initial;
+}
+@media only screen and (min-width: 610px) {
+    .bc-icon-button-tap-target:hover .bc-icon-button-solid {
+        background-color: rgba(53, 57, 60, 0.05);
+    }
+    .bc-icon-button-tap-target:hover .bc-icon-button-solid.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-icon-button-tap-target:active .bc-icon-button-solid {
+    background-color: rgba(53, 57, 60, 0.2);
+}
+.bc-icon-button-tap-target:active .bc-icon-button-solid.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-solid.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-solid {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-solid.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target .bc-icon-button-solid {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-icon-button-tap-target .bc-icon-button-solid.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-icon-button-tap-target .bc-icon-button-solid.bc-button-selected i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-button-tap-target .bc-icon-button-solid i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-icon-button-tap-target:hover .bc-icon-button-primary {
+        background-color: rgb(240, 168, 0);
+    }
+    .bc-icon-button-tap-target:hover .bc-icon-button-primary.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-icon-button-tap-target:active .bc-icon-button-primary {
+    background-color: rgb(255, 155, 0);
+}
+.bc-icon-button-tap-target:active .bc-icon-button-primary.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-primary {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-primary.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-primary {
+    background-color: rgba(53, 57, 60, 0.1);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-primary.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target .bc-icon-button-primary {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-button-tap-target .bc-icon-button-primary.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-icon-button-tap-target .bc-icon-button-primary.bc-button-selected i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-button-tap-target .bc-icon-button-primary i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-icon-button-tap-target:hover .bc-icon-button-preorder {
+        background-color: rgb(240, 62, 163);
+    }
+    .bc-icon-button-tap-target:hover .bc-icon-button-preorder.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-icon-button-tap-target:active .bc-icon-button-preorder {
+    background-color: rgb(120, 0, 63);
+}
+.bc-icon-button-tap-target:active .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-preorder {
+    background-color: rgb(181, 0, 114);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target .bc-icon-button-preorder {
+    background-color: rgb(181, 0, 114);
+}
+.bc-icon-button-tap-target .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-icon-button-tap-target .bc-icon-button-preorder.bc-button-selected i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-button-tap-target .bc-icon-button-preorder i {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-icon-button-tap-target:hover .bc-icon-button-active {
+        background-color: rgb(0, 231, 231);
+    }
+    .bc-icon-button-tap-target:hover .bc-icon-button-active.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-icon-button-tap-target:active .bc-icon-button-active {
+    background-color: rgb(0, 191, 191);
+}
+.bc-icon-button-tap-target:active .bc-icon-button-active.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-active.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-active {
+    background-color: rgb(0, 212, 212);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-active.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target .bc-icon-button-active {
+    background-color: rgb(0, 212, 212);
+}
+.bc-icon-button-tap-target .bc-icon-button-active.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-icon-button-tap-target .bc-icon-button-active.bc-button-selected i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-button-tap-target .bc-icon-button-active i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-icon-button-tap-target:hover .bc-icon-button-outline {
+        background-color: rgba(53, 57, 60, 0.05);
+    }
+    .bc-icon-button-tap-target:hover .bc-icon-button-outline.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-icon-button-tap-target:active .bc-icon-button-outline {
+    background-color: rgba(53, 57, 60, 0.2);
+}
+.bc-icon-button-tap-target:active .bc-icon-button-outline.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-outline.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-outline {
+    background-color: transparent;
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-outline.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target .bc-icon-button-outline {
+    background-color: transparent;
+    border-color: rgba(200, 186, 165, 0.25);
+}
+.bc-icon-button-tap-target .bc-icon-button-outline.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-icon-button-tap-target .bc-icon-button-outline.bc-button-selected i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-button-tap-target .bc-icon-button-outline i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-icon-button-tap-target:hover .bc-icon-button-simple {
+        background-color: rgba(53, 57, 60, 0.05);
+    }
+    .bc-icon-button-tap-target:hover .bc-icon-button-simple.bc-button-selected {
+        background-color: rgb(53, 57, 60);
+        border-color: initial;
+    }
+}
+.bc-icon-button-tap-target:active .bc-icon-button-simple {
+    background-color: rgba(53, 57, 60, 0.2);
+}
+.bc-icon-button-tap-target:active .bc-icon-button-simple.bc-button-selected {
+    background-color: rgba(53, 57, 60, 0.75);
+    border-color: initial;
+}
+.bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-simple.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-simple {
+    background-color: transparent;
+}
+.bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-simple.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-button-tap-target .bc-icon-button-simple {
+    background-color: transparent;
+}
+.bc-icon-button-tap-target .bc-icon-button-simple.bc-button-selected {
+    background-color: rgb(22, 24, 26);
+    border-color: initial;
+}
+.bc-icon-button-tap-target .bc-icon-button-simple.bc-button-selected i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-button-tap-target .bc-icon-button-simple i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-solid {
+        background-color: rgba(44, 48, 50, 0.35);
+    }
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-solid.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-solid {
+    background-color: rgba(44, 48, 50, 0.25);
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-solid.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-solid.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-solid {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-solid.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-solid {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-solid.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-solid.bc-button-selected i {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-solid i {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-primary {
+        background-color: rgb(240, 168, 0);
+    }
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-primary.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-primary {
+    background-color: rgb(255, 155, 0);
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-primary.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-primary {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-primary.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-primary {
+    background-color: rgba(44, 48, 50, 0.15);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-primary.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-primary {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-primary.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-primary.bc-button-selected i {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-primary i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-preorder {
+        background-color: rgb(240, 62, 163);
+    }
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-preorder.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-preorder {
+    background-color: rgb(120, 0, 63);
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-preorder {
+    background-color: rgb(181, 0, 114);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-preorder {
+    background-color: rgb(181, 0, 114);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-preorder.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-preorder.bc-button-selected i {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-preorder i {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-active {
+        background-color: rgb(0, 231, 231);
+    }
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-active.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-active {
+    background-color: rgb(0, 191, 191);
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-active.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-active.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-active {
+    background-color: rgb(0, 212, 212);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-active.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-active {
+    background-color: rgb(0, 212, 212);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-active.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-active.bc-button-selected i {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-active i {
+    background-color: rgb(22, 24, 26);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-outline {
+        background-color: rgba(44, 48, 50, 0.35);
+    }
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-outline.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-outline {
+    background-color: rgba(44, 48, 50, 0.25);
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-outline.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-outline.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-outline {
+    background-color: transparent;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-outline.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-outline {
+    background-color: transparent;
+    border-color: rgba(72, 78, 81, 0.25);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-outline.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-outline.bc-button-selected i {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-outline i {
+    background-color: rgb(36, 39, 41);
+}
+@media only screen and (min-width: 610px) {
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-simple {
+        background-color: rgba(44, 48, 50, 0.35);
+    }
+    .bc-palette-inverse .bc-icon-button-tap-target:hover .bc-icon-button-simple.bc-button-selected {
+        background-color: rgb(54, 59, 62);
+        border-color: initial;
+    }
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-simple {
+    background-color: rgba(44, 48, 50, 0.25);
+}
+.bc-palette-inverse .bc-icon-button-tap-target:active .bc-icon-button-simple.bc-button-selected {
+    background-color: rgba(54, 59, 62, 0.75);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled .bc-icon-button-simple.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-simple {
+    background-color: transparent;
+}
+.bc-palette-inverse .bc-icon-button-tap-target.bc-button-disabled:hover .bc-icon-button-simple.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-simple {
+    background-color: transparent;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-simple.bc-button-selected {
+    background-color: rgb(36, 39, 41);
+    border-color: initial;
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-simple.bc-button-selected i {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-button-tap-target .bc-icon-button-simple i {
+    background-color: rgb(36, 39, 41);
+}
+.bc-button-player.bc-svg-icon-override .bc-button-player-icon {
+    background-color: currentcolor;
+}
+.bc-tab-heading {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-tab-heading .bc-heading,
+.bc-tab-heading .bc-text {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-tab-heading .bc-heading:hover,
+.bc-tab-heading .bc-text:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-tab-heading:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-tab-heading.bc-tab-active {
+    color: rgb(255, 255, 255);
+}
+.bc-tab-heading.bc-tab-active .bc-heading,
+.bc-tab-heading.bc-tab-active .bc-text {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-tab-heading {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-tab-heading .bc-heading,
+.bc-palette-inverse .bc-tab-heading .bc-text {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-tab-heading .bc-heading:hover,
+.bc-palette-inverse .bc-tab-heading .bc-text:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-tab-heading:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-tab-heading.bc-tab-active {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-tab-heading.bc-tab-active .bc-heading,
+.bc-palette-inverse .bc-tab-heading.bc-tab-active .bc-text {
+    color: rgb(255, 255, 255);
+}
+.bc-tab-set .bc-link:hover {
+    text-decoration-color: initial;
+}
+.bc-table {
+    border-color: initial;
+}
+.bc-table.bc-table-structured .bc-table-row:nth-child(n+2) {
+    background-image: initial;
+    background-color: initial;
+}
+.bc-table.bc-table-bordered .bc-table-row:last-child td,
+.bc-table.bc-table-striped .bc-table-row:last-child td {
+    border-color: initial;
+}
+.bc-table.bc-table-bordered .bc-table-row {
+    background-image: initial;
+    background-color: initial;
+}
+.bc-table.bc-table-striped .bc-table-row:first-child,
+.bc-table.bc-table-striped .bc-table-row:nth-child(2n) {
+    background-image: initial;
+    background-color: initial;
+}
+.bc-modal-content-box {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+}
+.bc-modal-header.bc-modal-header-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px -5px;
+}
+.bc-overlay-type-default > .bc-overlay {
+    background-color: rgba(36, 39, 41, 0.8);
+}
+.bc-overlay-type-dark > .bc-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.bc-popover .bc-popover-inner {
+    border-color: rgba(200, 186, 165, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+}
+.bc-palette-inverse .bc-popover-inner {
+    background-color: rgb(53, 57, 60);
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-popover-beak {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zNzMgLTAuOTIwIC0xLjAwNyAwLjAwMCAxLjU1MyAtMC45NjggMC40MzIgLTAuOTk2IDAuMDAwIDEuNTMwIC0wLjk1MyAtMC45MTQgMC4zNzUgMC4wMDAgMS40OTEgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEQ5NGJXd2dkbVZ5YzJsdmJqMGlNUzR3SWlCbGJtTnZaR2x1WnowaVZWUkdMVGdpUHo0S1BITjJaeUIzYVdSMGFEMGlNVFp3ZUNJZ2FHVnBaMmgwUFNJeE5uQjRJaUIyYVdWM1FtOTRQU0l3SURBZ01UWWdNVFlpSUhabGNuTnBiMjQ5SWpFdU1TSWdlRzFzYm5NOUltaDBkSEE2THk5M2QzY3Vkek11YjNKbkx6SXdNREF2YzNabklpQjRiV3h1Y3pwNGJHbHVhejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TVRrNU9TOTRiR2x1YXlJK0NpQWdJQ0E4WkdWbWN6NEtJQ0FnSUNBZ0lDQThjRzlzZVdkdmJpQnBaRDBpY0dGMGFDMHhJaUJ3YjJsdWRITTlJamdnTUNBeE5pQTRJREFnT0NJK1BDOXdiMng1WjI5dVBnb2dJQ0FnSUNBZ0lEeG1hV3gwWlhJZ2VEMGlMVFF3TGpZbElpQjVQU0l0TmpndU9DVWlJSGRwWkhSb1BTSXhPREV1TWlVaUlHaGxhV2RvZEQwaU1qWXlMalVsSWlCbWFXeDBaWEpWYm1sMGN6MGliMkpxWldOMFFtOTFibVJwYm1kQ2IzZ2lJR2xrUFNKbWFXeDBaWEl0TWlJK0NpQWdJQ0FnSUNBZ0lDQWdJRHhtWlU5bVpuTmxkQ0JrZUQwaU1DSWdaSGs5SWpFaUlHbHVQU0pUYjNWeVkyVkJiSEJvWVNJZ2NtVnpkV3gwUFNKemFHRmtiM2RQWm1aelpYUlBkWFJsY2pFaVBqd3ZabVZQWm1aelpYUStDaUFnSUNBZ0lDQWdJQ0FnSUR4bVpVZGhkWE56YVdGdVFteDFjaUJ6ZEdSRVpYWnBZWFJwYjI0OUlqSWlJR2x1UFNKemFHRmtiM2RQWm1aelpYUlBkWFJsY2pFaUlISmxjM1ZzZEQwaWMyaGhaRzkzUW14MWNrOTFkR1Z5TVNJK1BDOW1aVWRoZFhOemFXRnVRbXgxY2o0S0lDQWdJQ0FnSUNBZ0lDQWdQR1psUTI5dGNHOXphWFJsSUdsdVBTSnphR0ZrYjNkQ2JIVnlUM1YwWlhJeElpQnBiakk5SWxOdmRYSmpaVUZzY0doaElpQnZjR1Z5WVhSdmNqMGliM1YwSWlCeVpYTjFiSFE5SW5Ob1lXUnZkMEpzZFhKUGRYUmxjakVpUGp3dlptVkRiMjF3YjNOcGRHVStDaUFnSUNBZ0lDQWdJQ0FnSUR4bVpVTnZiRzl5VFdGMGNtbDRJSFpoYkhWbGN6MGlNQ0F3SURBZ01DQXdJQ0FnTUNBd0lEQWdNQ0F3SUNBZ01DQXdJREFnTUNBd0lDQXdJREFnTUNBd0xqSTFJREFpSUhSNWNHVTlJbTFoZEhKcGVDSWdhVzQ5SW5Ob1lXUnZkMEpzZFhKUGRYUmxjakVpUGp3dlptVkRiMnh2Y2sxaGRISnBlRDRLSUNBZ0lDQWdJQ0E4TDJacGJIUmxjajRLSUNBZ0lEd3ZaR1ZtY3o0S0lDQWdJRHhuSUdsa1BTSmlaV0ZyTFdsdWRtVnljMlVpSUhOMGNtOXJaVDBpYm05dVpTSWdjM1J5YjJ0bExYZHBaSFJvUFNJeElpQm1hV3hzUFNKdWIyNWxJaUJtYVd4c0xYSjFiR1U5SW1WMlpXNXZaR1FpUGdvZ0lDQWdJQ0FnSUR4bklHbGtQU0pVY21saGJtZHNaU0krQ2lBZ0lDQWdJQ0FnSUNBZ0lEeDFjMlVnWm1sc2JEMGlZbXhoWTJzaUlHWnBiR3d0YjNCaFkybDBlVDBpTVNJZ1ptbHNkR1Z5UFNKMWNtd29JMlpwYkhSbGNpMHlLU0lnZUd4cGJtczZhSEpsWmowaUkzQmhkR2d0TVNJK1BDOTFjMlUrQ2lBZ0lDQWdJQ0FnSUNBZ0lEeHdZWFJvSUhOMGNtOXJaUzF2Y0dGamFYUjVQU0l3TGpJMUlpQnpkSEp2YTJVOUlpTXhOREUwTVRRaUlITjBjbTlyWlMxM2FXUjBhRDBpTVNJZ1pEMGlUVGdzTUM0M01EY3hNRFkzT0RFZ1RERXVNakEzTVRBMk56Z3NOeTQxSUV3eE5DNDNPVEk0T1RNeUxEY3VOU0JNT0N3d0xqY3dOekV3TmpjNE1TQmFJaUJ6ZEhKdmEyVXRiR2x1WldwdmFXNDlJbk54ZFdGeVpTSWdabWxzYkQwaUl6SkRNekV6TWlJZ1ptbHNiQzF5ZFd4bFBTSmxkbVZ1YjJSa0lqNDhMM0JoZEdnK0NpQWdJQ0FnSUNBZ1BDOW5QZ29nSUNBZ0lDQWdJRHh3YjJ4NVoyOXVJR2xrUFNKVWNtbGhibWRzWlNJZ1ptbHNiRDBpSXpKRE16RXpNaUlnY0c5cGJuUnpQU0k0SURFdU5DQXlNQ0F4TXk0MElDMDBJREV6TGpRaVBqd3ZjRzlzZVdkdmJqNEtJQ0FnSUR3dlp6NEtQQzl6ZG1jKyIgLz48L3N2Zz4=");
+}
+.bc-palette-default .bc-popover-inner {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-default .bc-popover-beak {
+    background-image: url("https://m.media-amazon.com/images/G/01/audibleweb/brickcity/1.0/beak-default._CB1565890300_.svg"); 
+}
+.bc-range input[type="range"] {
+    background-image: initial; background-color: initial; 
+}
+.bc-range input[type="range"]:focus {
+    outline-color: initial; 
+}
+.bc-range input[type="range"]::-webkit-slider-runnable-track {
+    background-image: initial;
+    background-color: rgba(22, 24, 26, 0.15); 
+}
+.bc-palette-inverse .bc-range input[type="range"]::-webkit-slider-runnable-track {
+    background-image: initial;
+    background-color: rgba(36, 39, 41, 0.15); 
+}
+.bc-range input[type="range"]::-webkit-slider-thumb {
+    background-image: initial;
+    background-color: rgb(22, 24, 26); border-color: initial; 
+}
+.bc-range input[type="range"]::-webkit-slider-thumb:active {
+    box-shadow: rgba(22, 24, 26, 0.15) 0px 0px 0px 16px; 
+}
+.bc-palette-inverse .bc-range input[type="range"]::-webkit-slider-thumb {
+    background-image: initial;
+    background-color: rgb(36, 39, 41); 
+}
+.bc-palette-inverse .bc-range input[type="range"]::-webkit-slider-thumb:active {
+    box-shadow: rgba(36, 39, 41, 0.15) 0px 0px 0px 16px;
+}
+.bc-video {
+    background-color: rgb(0, 0, 0);
+}
+.bc-video .bc-video-btn {
+    background-image: initial;
+    background-color: initial;
+    border-color: initial;
+}
+.bc-video .bc-video-controls {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.bc-video .bc-video-poster {
+    background-color: rgb(0, 0, 0);
+}
+.bc-video .bc-video-poster-button {
+    color: rgb(255, 255, 255);
+}
+.bc-video .bc-video-poster-button .poster-icon {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.bc-audio-trigger {
+    border-color: rgb(72, 78, 81);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+.bc-audio-trigger .bc-icon {
+    color: rgb(255, 255, 255);
+}
+.bc-audio-trigger:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+.bc-icon.bc-badge-icon.bc-icon-premiumplus {
+    background-image: url("https://m.media-amazon.com/images/G/01/AUIClients/AudibleBrickCityBaseAssets-premiumplus_light-d0b0acfcf3f3bcd36d9d4638bbed3030eb3f3cba._V2_.svg");
+}
+.bc-icon.bc-badge-icon.bc-icon-plus {
+    background-image: url("https://m.media-amazon.com/images/G/01/AUIClients/AudibleBrickCityBaseAssets-plus-9941e075804e85cb166ec3ce8ef5f2ee38e542cd._V2_.svg");
+}
+.bc-palette-inverse .bc-icon.bc-badge-icon.bc-icon-premiumplus {
+    background-image: url("https://m.media-amazon.com/images/G/01/AUIClients/AudibleBrickCityBaseAssets-premiumplus_dark-35ea1ed4e19d98ad354371a9b675e02ef1c59fa5._V2_.svg");
+}
+.bc-svg-icon-override.bc-icon-close {
+    background-color: rgb(22, 24, 26);
+}
+.bc-svg-icon-override.bc-icon-play {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-svg-icon-override.bc-icon-close {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-svg-icon-override.bc-icon-play {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-finished-fill {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-finished-fill-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-finished-fill-active-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-finished-fill-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-finished-fill-base-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-finished-fill-secondary-s3 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-finished-fill-tertiary-s3 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-finished-fill-link-s3 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-finished-fill-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-finished-fill-price-s3 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-finished-fill-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-finished-fill-inverse-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-finished-fill-member-notenrolled-s3 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-finished-fill-member-silver-s3 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-finished-fill-member-gold-s3 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-finished-fill-member-platinum-s3 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-planpicker-check-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-planpicker-check-primary-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-planpicker-check-active-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-planpicker-check-progress-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-planpicker-check-base-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-planpicker-check-secondary-s4 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-planpicker-check-tertiary-s4 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-planpicker-check-link-s4 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-planpicker-check-error-s4 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-planpicker-check-price-s4 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-planpicker-check-pre-order-s4 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-planpicker-check-inverse-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-planpicker-check-member-notenrolled-s4 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-planpicker-check-member-silver-s4 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-planpicker-check-member-gold-s4 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-planpicker-check-member-platinum-s4 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-planpicker-cross-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-planpicker-cross-primary-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-planpicker-cross-active-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-planpicker-cross-progress-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-planpicker-cross-base-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-planpicker-cross-secondary-s4 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-planpicker-cross-tertiary-s4 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-planpicker-cross-link-s4 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-planpicker-cross-error-s4 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-planpicker-cross-price-s4 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-planpicker-cross-pre-order-s4 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-planpicker-cross-inverse-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-planpicker-cross-member-notenrolled-s4 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-planpicker-cross-member-silver-s4 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-planpicker-cross-member-gold-s4 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-planpicker-cross-member-platinum-s4 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-collection-empty {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-collection-empty-active-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-collection-empty-base-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-secondary-s3 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-collection-empty-tertiary-s3 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-collection-empty-link-s3 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-collection-empty-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-collection-empty-price-s3 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-collection-empty-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-collection-empty-inverse-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-collection-empty-member-notenrolled-s3 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-collection-empty-member-silver-s3 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-collection-empty-member-gold-s3 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-collection-empty-member-platinum-s3 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-collection-empty-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-primary-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-collection-empty-active-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-progress-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-collection-empty-base-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-secondary-s8 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-collection-empty-tertiary-s8 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-collection-empty-link-s8 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-collection-empty-error-s8 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-collection-empty-price-s8 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-collection-empty-pre-order-s8 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-collection-empty-inverse-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-collection-empty-member-notenrolled-s8 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-collection-empty-member-silver-s8 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-collection-empty-member-gold-s8 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-collection-empty-member-platinum-s8 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-collection-empty-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-primary-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-collection-empty-active-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-progress-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-collection-empty-base-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-collection-empty-secondary-s9 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-collection-empty-tertiary-s9 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-collection-empty-link-s9 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-collection-empty-error-s9 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-collection-empty-price-s9 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-collection-empty-pre-order-s9 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-collection-empty-inverse-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-collection-empty-member-notenrolled-s9 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-collection-empty-member-silver-s9 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-collection-empty-member-gold-s9 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-collection-empty-member-platinum-s9 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-favorite {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-favorite-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-favorite-active-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-favorite-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-favorite-base-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-favorite-secondary-s3 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-favorite-tertiary-s3 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-favorite-link-s3 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-favorite-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-favorite-price-s3 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-favorite-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-favorite-inverse-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-favorite-member-notenrolled-s3 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-favorite-member-silver-s3 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-favorite-member-gold-s3 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-favorite-member-platinum-s3 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-favorite-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-favorite-primary-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-favorite-active-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-favorite-progress-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-favorite-base-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-favorite-secondary-s8 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-favorite-tertiary-s8 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-favorite-link-s8 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-favorite-error-s8 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-favorite-price-s8 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-favorite-pre-order-s8 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-favorite-inverse-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-favorite-member-notenrolled-s8 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-favorite-member-silver-s8 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-favorite-member-gold-s8 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-favorite-member-platinum-s8 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-next {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-next-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-next-active-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-next-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-next-base-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-next-secondary-s3 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-next-tertiary-s3 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-next-link-s3 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-next-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-next-price-s3 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-next-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-next-inverse-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-next-member-notenrolled-s3 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-next-member-silver-s3 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-next-member-gold-s3 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-next-member-platinum-s3 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-locked-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-locked-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-locked-active-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-locked-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-locked-base-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-locked-secondary-s2 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-locked-tertiary-s2 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-locked-link-s2 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-locked-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-locked-price-s2 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-locked-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-locked-inverse-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-locked-member-notenrolled-s2 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-locked-member-silver-s2 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-locked-member-gold-s2 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-locked-member-platinum-s2 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-library {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-library-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-library-active-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-library-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-library-base-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-library-secondary-s3 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-library-tertiary-s3 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-library-link-s3 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-library-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-library-price-s3 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-library-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-library-inverse-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-library-member-notenrolled-s3 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-library-member-silver-s3 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-library-member-gold-s3 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-library-member-platinum-s3 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-library-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-library-primary-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-library-active-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-library-progress-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-library-base-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-library-secondary-s9 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-library-tertiary-s9 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-library-link-s9 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-library-error-s9 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-library-price-s9 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-library-pre-order-s9 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-library-inverse-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-library-member-notenrolled-s9 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-library-member-silver-s9 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-library-member-gold-s9 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-library-member-platinum-s9 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-arrow-right-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-arrow-right-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-arrow-right-active-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-arrow-right-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-arrow-right-base-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-arrow-right-secondary-s2 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-arrow-right-tertiary-s2 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-arrow-right-link-s2 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-arrow-right-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-arrow-right-price-s2 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-arrow-right-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-arrow-right-inverse-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-arrow-right-member-notenrolled-s2 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-arrow-right-member-silver-s2 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-arrow-right-member-gold-s2 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-arrow-right-member-platinum-s2 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-caret-down-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-caret-down-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-caret-down-active-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-caret-down-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-caret-down-base-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-caret-down-secondary-s2 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-caret-down-tertiary-s2 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-caret-down-link-s2 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-caret-down-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-caret-down-price-s2 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-caret-down-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-caret-down-inverse-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-caret-down-member-notenrolled-s2 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-caret-down-member-silver-s2 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-caret-down-member-gold-s2 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-caret-down-member-platinum-s2 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-icon-caret-up-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-caret-up-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-caret-up-active-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-caret-up-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-icon-caret-up-base-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-icon-caret-up-secondary-s2 {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-icon-caret-up-tertiary-s2 {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-icon-caret-up-link-s2 {
+    background-color: rgb(3, 139, 219);
+}
+.bc-icon-caret-up-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-icon-caret-up-price-s2 {
+    background-color: rgb(53, 57, 60);
+}
+.bc-icon-caret-up-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-icon-caret-up-inverse-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-icon-caret-up-member-notenrolled-s2 {
+    background-color: rgb(77, 147, 128);
+}
+.bc-icon-caret-up-member-silver-s2 {
+    background-color: rgb(133, 144, 150);
+}
+.bc-icon-caret-up-member-gold-s2 {
+    background-color: rgb(185, 132, 18);
+}
+.bc-icon-caret-up-member-platinum-s2 {
+    background-color: rgb(117, 129, 153);
+}
+.bc-palette-inverse .bc-icon-finished-fill {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-finished-fill-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-finished-fill-active-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-finished-fill-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-finished-fill-base-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-finished-fill-secondary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-finished-fill-tertiary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-finished-fill-link-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-finished-fill-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-finished-fill-price-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-finished-fill-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-finished-fill-inverse-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-finished-fill-member-notenrolled-s3 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-finished-fill-member-silver-s3 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-finished-fill-member-gold-s3 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-finished-fill-member-platinum-s3 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-primary-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-active-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-progress-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-base-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-secondary-s4 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-tertiary-s4 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-link-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-error-s4 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-price-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-pre-order-s4 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-inverse-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-member-notenrolled-s4 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-member-silver-s4 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-member-gold-s4 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-planpicker-check-member-platinum-s4 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-primary-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-active-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-progress-s4 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-base-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-secondary-s4 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-tertiary-s4 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-link-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-error-s4 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-price-s4 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-pre-order-s4 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-inverse-s4 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-member-notenrolled-s4 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-member-silver-s4 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-member-gold-s4 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-planpicker-cross-member-platinum-s4 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-collection-empty {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-collection-empty-active-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-collection-empty-base-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-secondary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-collection-empty-tertiary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-collection-empty-link-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-collection-empty-price-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-collection-empty-inverse-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-notenrolled-s3 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-silver-s3 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-gold-s3 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-platinum-s3 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-collection-empty-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-primary-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-collection-empty-active-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-progress-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-collection-empty-base-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-secondary-s8 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-collection-empty-tertiary-s8 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-collection-empty-link-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-error-s8 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-collection-empty-price-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-pre-order-s8 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-collection-empty-inverse-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-notenrolled-s8 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-silver-s8 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-gold-s8 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-platinum-s8 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-collection-empty-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-primary-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-collection-empty-active-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-progress-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-collection-empty-base-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-secondary-s9 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-collection-empty-tertiary-s9 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-collection-empty-link-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-error-s9 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-collection-empty-price-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-collection-empty-pre-order-s9 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-collection-empty-inverse-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-notenrolled-s9 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-silver-s9 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-gold-s9 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-collection-empty-member-platinum-s9 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-favorite {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-favorite-active-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-favorite-base-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-secondary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-favorite-tertiary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-favorite-link-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-favorite-price-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-favorite-inverse-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-favorite-member-notenrolled-s3 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-favorite-member-silver-s3 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-favorite-member-gold-s3 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-favorite-member-platinum-s3 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-favorite-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-primary-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-favorite-active-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-progress-s8 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-favorite-base-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-secondary-s8 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-favorite-tertiary-s8 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-favorite-link-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-error-s8 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-favorite-price-s8 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-favorite-pre-order-s8 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-favorite-inverse-s8 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-favorite-member-notenrolled-s8 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-favorite-member-silver-s8 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-favorite-member-gold-s8 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-favorite-member-platinum-s8 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-next {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-next-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-next-active-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-next-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-next-base-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-next-secondary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-next-tertiary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-next-link-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-next-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-next-price-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-next-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-next-inverse-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-next-member-notenrolled-s3 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-next-member-silver-s3 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-next-member-gold-s3 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-next-member-platinum-s3 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-locked-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-locked-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-locked-active-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-locked-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-locked-base-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-locked-secondary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-locked-tertiary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-locked-link-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-locked-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-locked-price-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-locked-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-locked-inverse-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-locked-member-notenrolled-s2 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-locked-member-silver-s2 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-locked-member-gold-s2 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-locked-member-platinum-s2 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-library {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-primary-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-library-active-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-progress-s3 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-library-base-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-secondary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-library-tertiary-s3 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-library-link-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-error-s3 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-library-price-s3 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-pre-order-s3 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-library-inverse-s3 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-library-member-notenrolled-s3 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-library-member-silver-s3 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-library-member-gold-s3 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-library-member-platinum-s3 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-library-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-primary-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-library-active-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-progress-s9 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-library-base-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-secondary-s9 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-library-tertiary-s9 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-library-link-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-error-s9 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-library-price-s9 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-library-pre-order-s9 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-library-inverse-s9 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-library-member-notenrolled-s9 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-library-member-silver-s9 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-library-member-gold-s9 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-library-member-platinum-s9 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-arrow-right-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-arrow-right-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-arrow-right-active-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-arrow-right-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-arrow-right-base-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-arrow-right-secondary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-arrow-right-tertiary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-arrow-right-link-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-arrow-right-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-arrow-right-price-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-arrow-right-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-arrow-right-inverse-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-arrow-right-member-notenrolled-s2 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-arrow-right-member-silver-s2 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-arrow-right-member-gold-s2 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-arrow-right-member-platinum-s2 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-caret-down-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-down-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-caret-down-active-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-down-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-caret-down-base-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-down-secondary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-caret-down-tertiary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-caret-down-link-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-down-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-caret-down-price-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-down-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-caret-down-inverse-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-caret-down-member-notenrolled-s2 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-caret-down-member-silver-s2 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-caret-down-member-gold-s2 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-caret-down-member-platinum-s2 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-palette-inverse .bc-icon-caret-up-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-up-primary-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-caret-up-active-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-up-progress-s2 {
+    background-color: rgb(255, 192, 0);
+}
+.bc-palette-inverse .bc-icon-caret-up-base-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-up-secondary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-caret-up-tertiary-s2 {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-palette-inverse .bc-icon-caret-up-link-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-up-error-s2 {
+    background-color: rgb(218, 53, 21);
+}
+.bc-palette-inverse .bc-icon-caret-up-price-s2 {
+    background-color: rgb(36, 39, 41);
+}
+.bc-palette-inverse .bc-icon-caret-up-pre-order-s2 {
+    background-color: rgb(240, 62, 163);
+}
+.bc-palette-inverse .bc-icon-caret-up-inverse-s2 {
+    background-color: rgb(22, 24, 26);
+}
+.bc-palette-inverse .bc-icon-caret-up-member-notenrolled-s2 {
+    background-color: rgb(75, 173, 153);
+}
+.bc-palette-inverse .bc-icon-caret-up-member-silver-s2 {
+    background-color: rgb(71, 77, 80);
+}
+.bc-palette-inverse .bc-icon-caret-up-member-gold-s2 {
+    background-color: rgb(213, 156, 35);
+}
+.bc-palette-inverse .bc-icon-caret-up-member-platinum-s2 {
+    background-color: rgb(78, 89, 115);
+}
+.bc-hide-text,
+.hide-text {
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border-color: initial;
+}
+.bc-divider.bc-divider-inverse {
+    border-color: rgb(159, 149, 131);
+}
+.bc-mask {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/audibleweb/brickcity/1.0/mask._V298585148_.png");
+    background-color: initial;
+}
+.bc-list-nostyle li,
+.bc-list-nostyle > li {
+    list-style-image: initial;
+}
+.bc-list-default li,
+.bc-list-default > li {
+    list-style-image: initial;
+}
+.bc-list-menu > li {
+    list-style-image: initial;
+}
+.bc-list-icons li,
+li.bc-list-icon {
+    list-style-image: initial;
+}
+.bc-color-inactive {
+    color: rgb(162, 255, 255);
+}
+.bc-color-inverse {
+    color: rgb(255, 255, 255);
+}
+.bc-color-alert-success {
+    color: rgb(168, 255, 255);
+}
+.bc-color-alert-warning {
+    color: rgb(255, 242, 71);
+}
+.bc-color-alert-error {
+    color: rgb(255, 161, 123);
+}
+.bc-color-alert-information {
+    color: rgb(101, 255, 255);
+}
+.bc-color-alert-inverse {
+    color: rgb(255, 255, 255);
+}
+.bc-color-background-inverse {
+    background-color: rgb(22, 24, 26);
+}
+.bc-color-background-pipe-primary {
+    background-color: rgb(255, 192, 0);
+}
+.bc-color-background-pipe-active {
+    background-color: rgb(22, 24, 26);
+}
+.bc-color-background-pipe-base {
+    background-color: rgb(22, 24, 26);
+}
+.bc-color-background-pipe-secondary {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-color-background-pipe-tertiary {
+    background-color: rgba(22, 24, 26, 0.35);
+}
+.bc-color-background-pipe-inactive {
+    background-color: rgb(0, 110, 165);
+}
+.bc-color-background-pipe-link {
+    background-color: rgb(3, 139, 219);
+}
+.bc-color-background-pipe-inverse {
+    background-color: rgb(36, 39, 41);
+}
+.bc-color-background-pipe-error {
+    background-color: rgb(218, 53, 21);
+}
+.bc-input-advanced {
+    border-color: initial;
+    outline-color: initial;
+    background-color: transparent;
+}
+.bc-input-box-color {
+    color: rgba(255, 255, 255, 0.65);
+    border-color: rgba(200, 186, 165, 0.25);
+}
+.bc-input-box-color:focus-within {
+    color: rgb(255, 255, 255);
+    border-color: rgb(200, 186, 165);
+    box-shadow: rgb(22, 24, 26) 0px 0px 0px 1px inset;
+}
+.bc-input-box-color.bc-input-error {
+    color: rgb(255, 161, 123);
+    border-color: rgb(255, 65, 27);
+    box-shadow: rgb(218, 53, 21) 0px 0px 0px 1px inset;
+}
+.bc-input-box-color.bc-input-error ~ .bc-input-support-message-container {
+    color: rgb(255, 161, 123);
+}
+.bc-input-box-color.bc-input-error ~ .bc-input-support-message-container .bc-input-support-message {
+    color: rgb(255, 161, 123);
+}
+.bc-input-box-color.bc-input-border-line:focus-within {
+    box-shadow: rgb(22, 24, 26) 0px -1px 0px 0px inset;
+}
+.bc-input-box-color.bc-input-border-line.bc-input-error {
+    box-shadow: rgb(218, 53, 21) 0px -1px 0px 0px inset;
+}
+.bc-input-color {
+    color: rgb(255, 255, 255);
+}
+.bc-input-color::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-dropdown-color {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-dropdown-color:focus {
+    color: rgb(255, 255, 255);
+}
+.bc-dropdown-icon {
+    color: rgb(255, 255, 255);
+}
+.bc-input-support-message {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-input-box-color {
+    color: rgba(255, 255, 255, 0.65);
+    border-color: rgba(72, 78, 81, 0.25);
+}
+.bc-palette-inverse .bc-input-box-color:focus-within {
+    color: rgb(255, 255, 255);
+    border-color: rgb(72, 78, 81);
+    box-shadow: rgb(36, 39, 41) 0px 0px 0px 1px inset;
+}
+.bc-palette-inverse .bc-input-box-color.bc-input-error {
+    color: rgb(255, 161, 123);
+    border-color: rgb(255, 65, 27);
+    box-shadow: rgb(218, 53, 21) 0px 0px 0px 1px inset;
+}
+.bc-palette-inverse .bc-input-box-color.bc-input-error ~ .bc-input-support-message-container {
+    color: rgb(255, 161, 123);
+}
+.bc-palette-inverse .bc-input-box-color.bc-input-error ~ .bc-input-support-message-container .bc-input-support-message {
+    color: rgb(255, 161, 123);
+}
+.bc-palette-inverse .bc-input-box-color.bc-input-border-line:focus-within {
+    box-shadow: rgb(36, 39, 41) 0px -1px 0px 0px inset;
+}
+.bc-palette-inverse .bc-input-box-color.bc-input-border-line.bc-input-error {
+    box-shadow: rgb(218, 53, 21) 0px -1px 0px 0px inset;
+}
+.bc-palette-inverse .bc-input-color {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-input-color::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-dropdown-color {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-palette-inverse .bc-dropdown-color:focus {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-dropdown-icon {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-input-support-message {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-input,
+textarea.bc-input {
+    background-color: rgb(36, 39, 41);
+}
+.bc-checkbox:hover :enabled + .bc-checkbox-icon-container {
+    border-color: rgb(200, 186, 165);
+}
+.bc-radio:hover :enabled + .bc-radio-icon {
+    border-color: rgb(200, 186, 165);
+}
+.bc-checkbox :checked + .bc-checkbox-icon-container {
+    border-color: initial;
+}
+.bc-checkbox :disabled ~ .bc-checkbox-label {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-checkbox :focus + .bc-checkbox-icon-container::after {
+    box-shadow: rgb(120, 131, 137) 0px 0px 3px 1px;
+}
+.bc-radio .bc-radio-inner-dot {
+    background-color: transparent;
+}
+.bc-radio :checked + .bc-radio-icon {
+    border-color: initial;
+}
+.bc-radio :disabled ~ .bc-radio-label {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-radio :focus + .bc-radio-icon::after {
+    box-shadow: rgb(120, 131, 137) 0px 0px 3px 1px;
+}
+.bc-switch-row .bc-switch-input:disabled ~ .bc-switch-label {
+    color: rgba(255, 255, 255, 0.65);
+}
+.bc-switch-row .bc-switch {
+    background-color: rgb(80, 86, 89);
+}
+.bc-switch-row .bc-switch-control {
+    background-color: rgb(36, 39, 41);
+}
+body,
+html {
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 39, 41);
+}
+.bc-focus-mouse {
+    outline-color: initial;
+}
+a {
+    color: rgb(115, 255, 255);
+    text-decoration-color: initial;
+}
+a:hover {
+    color: rgb(137, 255, 255);
+    text-decoration-color: initial;
+}
+a:active {
+    color: rgb(162, 255, 255);
+}
+a.bc-focus-mouse {
+    outline-color: initial;
+}
+.bc-link.bc-color-base:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-link.bc-color-base:active {
+    color: rgb(255, 255, 255);
+}
+.bc-color-link.bc-link-nav,
+.bc-link-nav {
+    color: rgb(255, 255, 255);
+}
+.bc-color-link.bc-link-nav:hover,
+.bc-link-nav:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-color-link.bc-link-nav:active,
+.bc-link-nav:active {
+    color: rgb(255, 255, 255);
+}
+.bc-link.bc-color-inverse:active,
+.bc-link.bc-color-inverse:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-link.bc-color-base:active,
+.bc-palette-inverse .bc-link.bc-color-base:hover,
+.bc-palette-inverse .bc-link.bc-color-link:active,
+.bc-palette-inverse .bc-link.bc-color-link:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-link.bc-color-inverse:active,
+.bc-palette-inverse .bc-link.bc-color-inverse:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-link.bc-color-base:active,
+.bc-palette-inverse .bc-palette-default .bc-link.bc-color-base:hover,
+.bc-palette-inverse .bc-palette-default .bc-link.bc-color-link:active,
+.bc-palette-inverse .bc-palette-default .bc-link.bc-color-link:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-palette-inverse .bc-palette-default .bc-link.bc-color-inverse:active,
+.bc-palette-inverse .bc-palette-default .bc-link.bc-color-inverse:hover {
+    color: rgb(255, 255, 255);
+}
+.bc-text-strike {
+    text-decoration-color: initial;
+}
+.bc-text-normal {
+    text-decoration-color: initial !important;
+}
+.bc-banner {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.bc-banner .bc-banner-wrap {
+    color: rgb(255, 255, 255);
+}
+.mobile .bc-banner {
+    background-color: rgb(0, 0, 0);
+}
+.bc-banner-unleashed .bc-banner-unleashed-wrap {
+    background-color: rgba(36, 39, 41, 0.4);
+}
+.bc-banner-unleashed .bc-banner-unleashed-right {
+    background-color: rgb(36, 39, 41);
+    color: rgb(255, 255, 255);
+}
+.bc-banner-unleashed .bc-banner-unleashed-right::before {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzYwIj48ZGVmcz48ZmlsdGVyIGlkPSJkYXJrcmVhZGVyLWltYWdlLWZpbHRlciI+PGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAuNTAwIC0xLjAwMSAtMS4wMDEgMC4wMDAgMS41MDAgLTEuMDAxIDAuNTAwIC0xLjAwMSAwLjAwMCAxLjUwMCAtMS4wMDEgLTEuMDAxIDAuNTAwIDAuMDAwIDEuNTAwIDAuMDAwIDAuMDAwIDAuMDAwIDEuMDAwIDAuMDAwIiAvPjwvZmlsdGVyPjwvZGVmcz48aW1hZ2Ugd2lkdGg9IjMwIiBoZWlnaHQ9IjM2MCIgZmlsdGVyPSJ1cmwoI2RhcmtyZWFkZXItaW1hZ2UtZmlsdGVyKSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFCNEFBQUZvQ0FZQUFBQkFQRXZLQUFBQUdYUkZXSFJUYjJaMGQyRnlaUUJCWkc5aVpTQkpiV0ZuWlZKbFlXUjVjY2xsUEFBQUE0SnBWRmgwV0UxTU9tTnZiUzVoWkc5aVpTNTRiWEFBQUFBQUFEdy9lSEJoWTJ0bGRDQmlaV2RwYmowaTc3dS9JaUJwWkQwaVZ6Vk5NRTF3UTJWb2FVaDZjbVZUZWs1VVkzcHJZemxrSWo4K0lEeDRPbmh0Y0cxbGRHRWdlRzFzYm5NNmVEMGlZV1J2WW1VNmJuTTZiV1YwWVM4aUlIZzZlRzF3ZEdzOUlrRmtiMkpsSUZoTlVDQkRiM0psSURVdU5TMWpNREl4SURjNUxqRTFOVGMzTWl3Z01qQXhOQzh3TVM4eE15MHhPVG8wTkRvd01DQWdJQ0FnSUNBZ0lqNGdQSEprWmpwU1JFWWdlRzFzYm5NNmNtUm1QU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh4T1RrNUx6QXlMekl5TFhKa1ppMXplVzUwWVhndGJuTWpJajRnUEhKa1pqcEVaWE5qY21sd2RHbHZiaUJ5WkdZNllXSnZkWFE5SWlJZ2VHMXNibk02ZUcxd1RVMDlJbWgwZEhBNkx5OXVjeTVoWkc5aVpTNWpiMjB2ZUdGd0x6RXVNQzl0YlM4aUlIaHRiRzV6T25OMFVtVm1QU0pvZEhSd09pOHZibk11WVdSdlltVXVZMjl0TDNoaGNDOHhMakF2YzFSNWNHVXZVbVZ6YjNWeVkyVlNaV1lqSWlCNGJXeHVjenA0YlhBOUltaDBkSEE2THk5dWN5NWhaRzlpWlM1amIyMHZlR0Z3THpFdU1DOGlJSGh0Y0UxTk9rOXlhV2RwYm1Gc1JHOWpkVzFsYm5SSlJEMGllRzF3TG1ScFpEcERPRFpGTURWRFFqSXdNakEyT0RFeE9ESXlRVU0xTWtZNFFVUXhRekZCUlNJZ2VHMXdUVTA2Ukc5amRXMWxiblJKUkQwaWVHMXdMbVJwWkRveU5Ua3pOVU5HTkVJeE5FWXhNVVUwUVRsRU5qazRNRUkxTVVNM05EWXhOeUlnZUcxd1RVMDZTVzV6ZEdGdVkyVkpSRDBpZUcxd0xtbHBaRG95TlRrek5VTkdNMEl4TkVZeE1VVTBRVGxFTmprNE1FSTFNVU0zTkRZeE55SWdlRzF3T2tOeVpXRjBiM0pVYjI5c1BTSkJaRzlpWlNCUWFHOTBiM05vYjNBZ1EwTWdNakF4TkNBb1RXRmphVzUwYjNOb0tTSStJRHg0YlhCTlRUcEVaWEpwZG1Wa1JuSnZiU0J6ZEZKbFpqcHBibk4wWVc1alpVbEVQU0o0YlhBdWFXbGtPamt6WXpFek1UWTBMVEl5TURFdE5EQTJOeTFoTnpjekxXWTVOVEkyWkdFek9XUTVZU0lnYzNSU1pXWTZaRzlqZFcxbGJuUkpSRDBpWVdSdlltVTZaRzlqYVdRNmNHaHZkRzl6YUc5d09qRTJZV1l4WXpWbExXWmlOMlF0TVRFM055MWlNMlZpTFdVMU1HVmxOVEppTnpjNE9TSXZQaUE4TDNKa1pqcEVaWE5qY21sd2RHbHZiajRnUEM5eVpHWTZVa1JHUGlBOEwzZzZlRzF3YldWMFlUNGdQRDk0Y0dGamEyVjBJR1Z1WkQwaWNpSS9QZ0N6bThrQUFBRVJTVVJCVkhqYTdjMnhFY0lBRUFTeDc5eDBma1F1Z2RrQXFRSGRJaWNXaThWaXNWZ3NGb3ZGWXJGWUxCYUx4V0t4V0N3V2k4VmlzVmdzRm92RllyRllMQmFMeFdLeFdDd1dpOFZpc1Znc0ZvdkZZckZZTEJhTHhlTC9pRDlWbk9SWDVWZmxWK1ZYNVZmbFYrVlg1VmZsVitWWDVWZmxWK1ZYNVZmbFYrVlg1VmZsVitWWDVWZmxWK1ZYNVZmbFYrVlg1VmZsVitWWDVWWDhKT21xZEZXNktsMlZya3BYcGF2U1ZlbXFkRlc2S2wyVnJrcFhwYXZTVmVtcWRGVzZLbDJWcmtwWHBhdlNWZW1xZEZXNktsMlZ2dkhFWXJGWUxCYUx4V0t4V0N3V2k4VmlzVmdzRm92RllyRllMQmFMeFdLeFdDd1dpOFZpc1Znc0ZvdkZZckZZTEJhTHhXS3hXQ3dXaThWaXNWZ3Mvb2t2VFVDZ1llTUIxUnNBQUFBQVNVVk9SSzVDWUlJPSIgLz48L3N2Zz4=");
+    background-color: initial;
+}
+.mobile .bc-banner-unleashed .bc-banner-title {
+    color: rgb(255, 255, 255);
+}
+.mobile .bc-banner-unleashed-wrap {
+    background-image: initial;
+    background-color: initial;
+}
+.mobile .bc-banner-unleashed-left {
+    background-color: rgba(36, 39, 41, 0.4);
+}
+.mobile .bc-banner-unleashed-left::after {
+    border-color: rgba(72, 78, 81, 0.4) transparent transparent;
+}
+.mobile .bc-banner-unleashed-right {
+    background-image: initial;
+    background-color: initial;
+}
+.bc-banner-video {
+    background-color: rgb(0, 0, 0);
+}
+.bc-banner-video .bc-banner-video-wrap {
+    background-color: rgb(0, 0, 0);
+}
+.bc-banner-video .bc-banner-title {
+    color: rgb(255, 255, 255);
+}
+@media only screen and (orientation: landscape) {
+    .mobile .bc-banner-unleashed-left::after {
+        border-top-color: transparent;
+        border-left-color: rgba(72, 78, 81, 0.4);
+    }
+}
+.bc-alert-normal {
+    color: rgb(255, 255, 255);
+}
+.bc-alert-normal a {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+}
+.bc-alert-normal .alert-close {
+    text-decoration-color: initial;
+}
+.bc-alert-normal .alert-close:hover {
+    background-color: rgba(36, 39, 41, 0.25);
+}
+.bc-alert-normal .alert-close:active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.bc-alert-normal.bc-alert-success {
+    background-color: rgb(5, 159, 108);
+}
+.bc-alert-normal.bc-alert-warning {
+    background-color: rgb(255, 163, 11);
+}
+.bc-alert-normal.bc-alert-error {
+    background-color: rgb(218, 53, 21);
+}
+.bc-alert-normal.bc-alert-info {
+    background-color: rgb(30, 185, 244);
+}
+.bc-alert-inline {
+    border-color: initial;
+}
+.bc-alert-inline a {
+    text-decoration-color: initial;
+}
+.bc-alert-inline.bc-alert-success,
+.bc-alert-inline.bc-alert-success a {
+    color: rgb(168, 255, 255);
+    border-color: rgb(9, 255, 212);
+}
+.bc-alert-inline.bc-alert-warning,
+.bc-alert-inline.bc-alert-warning a {
+    color: rgb(255, 242, 71);
+    border-color: rgb(251, 147, 9);
+}
+.bc-alert-inline.bc-alert-error,
+.bc-alert-inline.bc-alert-error a {
+    color: rgb(255, 161, 123);
+    border-color: rgb(255, 65, 27);
+}
+.bc-alert-inline.bc-alert-info,
+.bc-alert-inline.bc-alert-info a {
+    color: rgb(101, 255, 255);
+    border-color: rgb(30, 187, 249);
+}
+.bc-alert-toast {
+    background-color: rgb(51, 56, 57);
+}
+.bc-image-inset-border {
+    outline-color: rgba(192, 179, 159, 0.08);
+}
+.bc-image-fanned-out::before {
+    background-color: rgba(22, 24, 26, 0.15);
+}
+.bc-palette-inverse .bc-image-fanned-out::before {
+    background-color: rgba(36, 39, 41, 0.15);
+}
+.bc-image-fanned-out::after {
+    background-color: rgba(22, 24, 26, 0.1);
+}
+.bc-palette-inverse .bc-image-fanned-out::after {
+    background-color: rgba(36, 39, 41, 0.1);
+}
+.bc-inline-alert-error {
+    border-color: rgb(255, 65, 27);
+}
+.bc-inline-alert-base {
+    border-color: rgba(200, 186, 165, 0.15);
+}
+.bc-tooltip .bc-tooltip-inner {
+    background-color: rgb(51, 56, 57);
+}
+.bc-tooltip.bc-tooltip-bottom::after {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgba(210, 195, 173, 0.8);
+}
+.bc-tooltip.bc-tooltip-right::after {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: rgba(210, 195, 173, 0.8);
+}
+.bc-tooltip.bc-tooltip-top::after {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: rgba(210, 195, 173, 0.8);
+}
+.bc-tooltip.bc-tooltip-left::after {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgba(210, 195, 173, 0.8);
+}
+.bc-flyout .bc-flyout-inner {
+    background-color: rgb(36, 39, 41);
+    border-color: rgb(80, 86, 89);
+    box-shadow: rgba(57, 63, 65, 0.25) 2px 2px 6px 0px;
+}
+.bc-flyout .bc-flyout-beak {
+    background-image: url("https://m.media-amazon.com/images/G/01/audibleweb/brickcity/1.0/flyout/flyout_carrot._V317180310_.svg");
+}
+.bc-modal-backdrop {
+    background-color: rgb(0, 0, 0);
+}
+.bc-modal-container {
+    background-color: rgb(36, 39, 41);
+}
+.bc-modal-close {
+    color: rgb(255, 255, 255);
+}
+.bc-breadcrumb a {
+    color: rgb(115, 255, 255);
+}
+.bc-audio-trigger {
+    border-color: rgb(72, 78, 81);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+}
+.bc-audio-trigger .bc-icon {
+    color: rgb(255, 255, 255);
+}
+.bc-audio-trigger:hover {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+.bc-meter {
+    border-color: rgb(72, 78, 81);
+}
+.bc-box {
+    border-color: initial;
+}
+.bc-box.bc-box-alternate {
+    background-color: rgb(42, 45, 47);
+    border-color: initial;
+}
+.bc-box.bc-box-border {
+    border-color: rgb(90, 98, 102);
+}
+#toast {
+    background-image: initial;
+    background-color: rgb(51, 56, 57);
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px 0px;
+}
+.toast-message {
+    color: rgb(255, 255, 255);
+}
+.toast-action-message {
+    color: rgb(255, 255, 255);
+}
+.toast-close {
+    color: rgb(255, 255, 255);
+}
+.bc-search-results-container .bc-box .bc-list-item .bc-color-inverse {
+    color: rgb(255, 255, 255);
+}
+.bc-search-results-container .bc-box .bc-list-item a {
+    color: rgb(252, 240, 224);
+}
+.bc-search-results-container .bc-box .bc-list-item a b {
+    color: rgb(252, 240, 224);
+}
+.bc-search-results-container .bc-box .bc-list-item:hover {
+    background-color: rgb(115, 125, 129);
+}
+.bc-search-results-container .bc-box .bc-list-item:hover > a {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+}
+.bc-search-results-container .bc-list .bc-color-link:last-child {
+    border-top-color: rgb(93, 102, 105);
+    text-decoration-color: initial;
+}
+.transparent-header .bc-input {
+    background-color: transparent !important;
+}
+.bc-header-text-light .bc-input {
+    border-color: rgb(72, 78, 81);
+    color: rgb(255, 255, 255);
+}
+.bc-header-text-light .bc-input:focus {
+    border-color: rgb(251, 147, 9) !important;
+}
+.bc-header-text-light .bc-icon-search {
+    color: rgb(255, 255, 255) !important;
+}
+.bc-header-text-light .header-color-primary {
+    color: rgb(255, 255, 255) !important;
+}
+.bc-action-sheet .bc-action-sheet-item {
+    background-color: rgb(36, 39, 41);
+}
+.bc-action-sheet .bc-action-sheet-item:last-child {
+    border-color: initial;
+}
+.bc-overlay-legacy {
+    background-color: rgb(0, 0, 0);
+}
+.bc-overlay-legacy.bc-overlay-inverse {
+    background-color: rgb(36, 39, 41);
+}
+.bc-progress-segment {
+    background-color: rgba(36, 39, 41, 0.3);
+}
+.bc-progress-segment.bc-segment-complete {
+    background-color: rgb(36, 39, 41);
+}
+.bc-progress-segment.bc-segment-active {
+    background-image: repeating-linear-gradient(-45deg,
+    rgba(36, 39, 41, 0.3) 0px,
+    rgba(36, 39, 41, 0.3) 2.5px,
+    rgba(0, 0, 0, 0) 3px,
+    rgba(0, 0, 0, 0) 5px);
+    background-color: initial;
+}
+.bc-tag.bc-tag-primary {
+    background-color: rgba(255, 192, 0, 0.85);
+    color: rgb(255, 255, 255);
+}
+.bc-tag-link .bc-tag.bc-tag-primary:hover {
+    background-color: rgba(255, 192, 0, 0.65);
+}
+.bc-tag-link .bc-tag.bc-tag-primary:active {
+    background-color: rgb(255, 192, 0);
+}
+.bc-tag.bc-tag-solid {
+    background-color: rgba(22, 24, 26, 0.85);
+    color: rgb(255, 255, 255);
+}
+.bc-tag-link .bc-tag.bc-tag-solid:hover {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.bc-tag-link .bc-tag.bc-tag-solid:active {
+    background-color: rgb(22, 24, 26);
+}
+.bc-tag.bc-tag-solid-inverse {
+    background-color: rgba(36, 39, 41, 0.85);
+    color: rgb(255, 255, 255);
+}
+.bc-tag-link .bc-tag.bc-tag-solid-inverse:hover {
+    background-color: rgb(36, 39, 41);
+}
+.bc-tag-link .bc-tag.bc-tag-solid-inverse:active {
+    background-color: rgba(36, 39, 41, 0.65);
+}
+.bc-tag.bc-tag-outline {
+    border-color: rgba(200, 186, 165, 0.25);
+    color: rgb(255, 255, 255);
+}
+.bc-tag-link .bc-tag.bc-tag-outline:hover {
+    background-color: rgba(22, 24, 26, 0.05);
+}
+.bc-tag-link .bc-tag.bc-tag-outline:active {
+    background-color: rgba(22, 24, 26, 0.15);
+}
+.bc-tag.bc-tag-outline-inverse {
+    border-color: rgba(72, 78, 81, 0.25);
+    color: rgb(255, 255, 255);
+}
+.bc-tag-link .bc-tag.bc-tag-outline-inverse:hover {
+    background-color: rgba(36, 39, 41, 0.15);
+}
+.bc-tag-link .bc-tag.bc-tag-outline-inverse:active {
+    background-color: rgba(36, 39, 41, 0.1);
+}
+.bc-tag-link {
+    text-decoration-color: initial !important;
+}
+.bc-palette-inverse .bc-date-card,
+.bc-palette-inverse .bc-palette-default .bc-palette-inverse.bc-date-card,
+.bc-palette-inverse.bc-date-card {
+    background-image: url("https://m.media-amazon.com/images/G/01/AUIClients/AudibleBrickCityBaseAssets-calendar_inverse-66b9c9b98fb1796d16456f6481c83b9a880f65d0._V2_.png");
+}
+.bc-date-card,
+.bc-palette-inverse .bc-palette-default .bc-date-card,
+.bc-palette-inverse .bc-palette-default.bc-date-card {
+    background-image: url("https://m.media-amazon.com/images/G/01/AUIClients/AudibleBrickCityBaseAssets-calendar-4f3ecd646ac9feb563a73202669ff4514d64d477._V2_.png");
+}
+.bc-a11y-skiplink:focus {
+    color: rgb(115, 255, 255);
+    outline-color: rgb(3, 189, 255);
+}
+.overrideLinkStyle a {
+    color: rgb(255, 255, 255);
+}
+.overrideLinkStyle a:hover {
+    color: rgb(255, 255, 255);
+}
+.adbl-nav-notification-dot {
+    background-color: rgb(255, 192, 0);
+}
+.navigation-header-cart-count {
+    background-color: rgb(255, 171, 0);
+    color: rgb(255, 255, 255);
+}
+a.navigation-dont-underline-on-hover:hover {
+    text-decoration-color: initial;
+}
+a.navigation-dont-underline-on-hover:hover .navigation-do-underline-on-hover {
+    text-decoration-color: initial;
+}
+.bc-palette-inverse .navigation-header-wrapper-outer .bc-input {
+    color: rgb(255, 255, 255);
+    background-color: rgba(99, 108, 113, 0.3);
+    border-color: initial;
+}
+.bc-palette-inverse .navigation-header-wrapper-outer .bc-input::placeholder {
+    color: rgb(255, 255, 255);
+}
+.navigation-image-modal-content.bc-modal-content .navigation-image-modal-close {
+    background-color: rgba(36, 39, 41, 0.4);
+}
+.navigation-image-modal-content.bc-modal-content .navigation-image-modal-close:hover {
+    background-color: rgba(36, 39, 41, 0.6);
+}
+#adbl-amzn-reviews {
+    border-color: initial;
+}
+#adbl-amzn-portlet-reviews {
+    border-color: initial;
+}
+.profile-shadow {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 10px -10px;
+}
+.empty-product-image-grid {
+    background-color: rgb(72, 78, 81);
+}
+.product-image-grid-container .product-image {
+    background-color: rgb(72, 78, 81);
+}
+.test {
+    color: rgb(255, 255, 255);
+}
+.return-flow-container .audiobook-selector input:checked + .book-to-return::after {
+    border-color: rgb(200, 186, 165);
+    box-shadow: rgb(36, 39, 41) 0px 0px 0px 2px inset;
+}
+.return-flow-container .book-to-return {
+    border-color: initial;
+}
+.dlp-hero-contain .stripe {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.hero-content .dlp-asin .narrator {
+    color: rgb(255, 255, 255);
+}
+.dlp-hero-contain .hero-blur {
+    background-color: rgb(51, 56, 57);
+}
+.dlp-hero-contain .hero-mask {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 1024px) {
+    .dlp-hero-contain .hero-mask.video-mask {
+        background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+        linear-gradient(to right,
+        rgb(0, 0, 0) 0px,
+        rgba(0, 0, 0, 0) 18%,
+        rgba(0, 0, 0, 0) 82%,
+        rgb(0, 0, 0) 100%);
+        background-color: initial;
+    }
+}
+.flip-clock-wrapper a {
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);
+}
+.flip-clock-wrapper a:hover {
+    color: rgb(255, 255, 255);
+}
+.flip-clock-wrapper ul {
+    list-style-image: initial;
+}
+.flip-clock-meridium {
+    background-image: initial !important;
+    background-color: initial !important;
+}
+.flip-clock-meridium a {
+    color: rgb(255, 255, 255);
+}
+.flip-clock-wrapper ul {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.flip-clock-wrapper ul li {
+    text-decoration-color: initial !important;
+}
+.flip-clock-wrapper ul li a div {
+    outline-color: transparent;
+}
+.flip-clock-wrapper ul li a div.up::after {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.flip-clock-wrapper ul li a div div.inn {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0px 1px 2px;
+    background-color: rgb(57, 63, 65);
+}
+.flip-clock-wrapper .flip {
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 2px 5px;
+}
+.flip-clock-dot {
+    background-image: initial;
+    background-color: rgb(57, 63, 65);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}
+.flip-clock-divider .flip-clock-label {
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+}
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgb(0, 0, 0)));
+    background-color: initial;
+}
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgb(0, 0, 0)));
+    background-color: initial;
+}
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgb(0, 0, 0)),
+    to(rgba(0, 0, 0, 0.1)));
+    background-color: initial;
+}
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgb(0, 0, 0)),
+    to(rgba(0, 0, 0, 0.1)));
+    background-color: initial;
+}
+.dlp-header {
+    background-image: initial;
+    background-color: initial;
+}
+.dlp-modal-bg {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.collection-card-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+}
+.collection-card-shadow-no-hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px;
+}
+.collection-card-shadow:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 10px 0px;
+}
+.collection-card-content-container {
+    background-image: initial;
+    background-color: initial;
+}
+.collection-card-mosaic-overlay-text {
+    color: rgb(255, 255, 255);
+}
+.in-page-nav-unselected-tab-highlight {
+    background-color: transparent;
+}
+.flip-clock-wrapper ul {
+    background-image: initial;
+    background-color: initial;
+}
+.flip-clock-wrapper .flip {
+    box-shadow: none;
+}
+.flip-clock-wrapper ul li a div.up::after {
+    text-shadow: none;
+}
+.flip-clock-wrapper ul li a div div.inn {
+    text-shadow: none;
+}
+.flip-clock-wrapper ul li a div.up::after {
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 39, 41);
+}
+.flip-clock-wrapper.inverse ul li a div div.inn {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(60, 65, 68) 0px,
+    rgb(60, 65, 68) 50%,
+    rgb(36, 39, 41) 51%,
+    rgb(36, 39, 41) 100%);
+    background-color: initial;
+}
+.flip-clock-wrapper.inverse ul li a div.down {
+    background-image: initial;
+    background-color: rgb(36, 39, 41);
+}
+.flip-clock-wrapper.inverse ul li a div.up::after {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.flip-clock-wrapper ul li a div div.inn {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(32, 33, 35) 0px,
+    rgb(32, 33, 35) 50%,
+    rgb(57, 62, 63) 51%,
+    rgb(57, 62, 63) 100%);
+    background-color: initial;
+}
+.flip-clock-wrapper ul li a div.down {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.flip-countdown-clock.inverse .flip-clock-divider .flip-clock-label {
+    color: rgb(255, 255, 255);
+}
+.flip-clock-wrapper.inverse ul.play li.flip-clock-before .up .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgba(0, 0, 0, 0.3)));
+    background-color: initial;
+}
+.flip-clock-wrapper.inverse ul.play li.flip-clock-active .up .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0.1)),
+    to(rgba(0, 0, 0, 0.3)));
+    background-color: initial;
+}
+.flip-clock-wrapper.inverse ul.play li.flip-clock-before .down .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0.3)),
+    to(rgba(0, 0, 0, 0.1)));
+    background-color: initial;
+}
+.flip-clock-wrapper.inverse ul.play li.flip-clock-active .down .shadow {
+    background-image: -webkit-gradient(linear,
+    0% 0%,
+    0% 100%,
+    from(rgba(0, 0, 0, 0.3)),
+    to(rgba(0, 0, 0, 0.1)));
+    background-color: initial;
+}
+.bc-palette-inverse .fc-container .fc-text-group .bc-text {
+    color: rgb(255, 255, 255);
+}
+.fc-container .fc-text-group .bc-text {
+    color: rgb(255, 255, 255);
+}
+.feature-table-divider {
+    border-color: rgb(81, 89, 92);
+}
+.plan-feature-row .plan-picker-icon-in-plan,
+.plan-feature-row .plan-picker-icon-not-in-plan {
+    background-color: rgb(53, 57, 60);
+}
+.vjs-control-bar {
+    background-color: rgba(22, 24, 26, 0.65);
+}
+.video-js .vjs-load-progress div {
+    background-image: initial;
+    background-color: initial;
+}
+.vjs-menu-content {
+    background-color: rgb(22, 24, 26);
+}
+li.vjs-selected span {
+    color: rgb(255, 255, 255);
+}
+.vjs-menu-item-text {
+    color: rgb(255, 255, 255);
+}
+.vjs-live-display {
+    color: rgb(255, 255, 255);
+    background-color: rgb(218, 53, 21);
+}
+.livestream-media .video-js:hover .vjs-big-play-button {
+    background-color: transparent;
+}
+.livestream-media .vjs-big-play-centered .vjs-big-play-button {
+    border-color: initial;
+    background-color: transparent;
+}
+.livestream-media .vjs-big-play-centered .vjs-big-play-button .bc-icon-play {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.bc-autocomplete-suggestions-below .search-advanced-suggestion-link {
+    border-top-color: rgb(80, 86, 89);
+}
+.bc-autocomplete-suggestions-above .search-advanced-suggestion-link {
+    border-bottom-color: rgb(80, 86, 89);
+}
+#sp-floating-cart {
+    background-color: rgb(32, 33, 35);
+    box-shadow: rgb(80, 86, 89) 0px 1px 4px 0px;
+}
+#sp-floating-cart #cart-normal {
+    background-color: rgb(32, 33, 35);
+}
+#sp-floating-cart #cart-normal .cart-item-normal {
+    border-color: rgb(72, 78, 81);
+}
+#sp-floating-cart #cart-normal .cart-item-normal.added {
+    border-color: rgb(107, 115, 120);
+}
+#sp-floating-cart #cart-normal #freebook-placeholder-normal {
+    color: rgb(255, 255, 255);
+}
+#sp-floating-cart #cart-small {
+    background-color: rgb(32, 33, 35);
+}
+#sp-floating-cart #cart-small .cart-item-small {
+    border-color: rgb(72, 78, 81);
+}
+#sp-floating-cart #cart-small .cart-item-small.added {
+    border-color: rgb(107, 115, 120);
+}
+#sp-floating-cart .cart-book-icon {
+    background-image: url("https://m.media-amazon.com/images/G/01/audiblemobile/store/image/mobile-store/wasabi/bogo/bookIconAt100.svg");
+}
+#sp-floating-cart #sp-dim-overlay {
+    background-color: rgb(0, 0, 0);
+}
+.slick-slider {
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list:focus {
+    outline-color: initial;
+}
+.slick-vertical .slick-slide {
+    border-color: transparent;
+}
+.slick-next,
+.slick-prev {
+    color: transparent;
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: initial;
+}
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    color: transparent;
+    outline-color: initial;
+    background-image: initial;
+    background-color: initial;
+}
+.slick-next::before,
+.slick-prev::before {
+    color: rgb(255, 255, 255);
+}
+.slick-dots {
+    list-style-image: initial;
+}
+.slick-dots li button {
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: initial;
+}
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline-color: initial;
+}
+.slick-dots li button:hover::before {
+    color: rgb(255, 255, 255) !important;
+}
+.slick-dots li button:active::before {
+    color: rgb(255, 255, 255) !important;
+}
+.slick-dots li button::before {
+    color: rgb(255, 255, 255);
+}
+.slick-dots li.slick-active button::before {
+    color: rgb(255, 255, 255) !important; 
+}
+.product-carousel-item img[src=""], .product-shoveler img[src=""] {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIj48ZGVmcz48ZmlsdGVyIGlkPSJkYXJrcmVhZGVyLWltYWdlLWZpbHRlciI+PGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAuNTAwIC0xLjAwMSAtMS4wMDEgMC4wMDAgMS41MDAgLTEuMDAxIDAuNTAwIC0xLjAwMSAwLjAwMCAxLjUwMCAtMS4wMDEgLTEuMDAxIDAuNTAwIDAuMDAwIDEuNTAwIDAuMDAwIDAuMDAwIDAuMDAwIDEuMDAwIDAuMDAwIiAvPjwvZmlsdGVyPjwvZGVmcz48aW1hZ2Ugd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsdGVyPSJ1cmwoI2RhcmtyZWFkZXItaW1hZ2UtZmlsdGVyKSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBRUFBQUFCQ0FZQUFBQWZGY1NKQUFBQURVbEVRVlI0Mm1QODl2Mzdmd0FKdEFQbGpsQ1dmZ0FBQUFCSlJVNUVya0pnZ2c9PSIgLz48L3N2Zz4=");
+    background-color: initial;
+    color: transparent;
+}
+.slick-arrow .arrows {
+    background-image: initial;
+    background-color: rgb(60, 65, 68);
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px 0px;
+}
+.slick-arrow .arrows:hover {
+    background-image: initial;
+    background-color: rgb(48, 53, 56);
+}
+.slick-arrow .arrows:active {
+    background-image: initial;
+    background-color: rgb(71, 77, 80); 
+}
+.product-carousel-item img[src=""], .product-shoveler img[src=""] {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIj48ZGVmcz48ZmlsdGVyIGlkPSJkYXJrcmVhZGVyLWltYWdlLWZpbHRlciI+PGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAuNTAwIC0xLjAwMSAtMS4wMDEgMC4wMDAgMS41MDAgLTEuMDAxIDAuNTAwIC0xLjAwMSAwLjAwMCAxLjUwMCAtMS4wMDEgLTEuMDAxIDAuNTAwIDAuMDAwIDEuNTAwIDAuMDAwIDAuMDAwIDAuMDAwIDEuMDAwIDAuMDAwIiAvPjwvZmlsdGVyPjwvZGVmcz48aW1hZ2Ugd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsdGVyPSJ1cmwoI2RhcmtyZWFkZXItaW1hZ2UtZmlsdGVyKSIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBRUFBQUFCQ0FZQUFBQWZGY1NKQUFBQURVbEVRVlI0Mm1QODl2Mzdmd0FKdEFQbGpsQ1dmZ0FBQUFCSlJVNUVya0pnZ2c9PSIgLz48L3N2Zz4=");
+    background-color: initial;
+    color: transparent;
+}
+.slick-arrow .arrows {
+    background-image: initial;
+    background-color: rgb(60, 65, 68);
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px 0px;
+}
+.slick-arrow .arrows:hover {
+    background-image: initial;
+    background-color: rgb(48, 53, 56);
+}
+.slick-arrow .arrows:active {
+    background-image: initial;
+    background-color: rgb(71, 77, 80);
+}
+.slick-slider {
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list:focus {
+    outline-color: initial;
+}
+.slick-vertical .slick-slide {
+    border-color: transparent;
+}
+.slick-next,
+.slick-prev {
+    color: transparent;
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: initial;
+}
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    color: transparent;
+    outline-color: initial;
+    background-image: initial;
+    background-color: initial;
+}
+.slick-next::before,
+.slick-prev::before {
+    color: rgb(255, 255, 255);
+}
+.slick-dots {
+    list-style-image: initial;
+}
+.slick-dots li button {
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: initial;
+}
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline-color: initial;
+}
+.slick-dots li button:hover::before {
+    color: rgb(255, 255, 255) !important;
+}
+.slick-dots li button:active::before {
+    color: rgb(255, 255, 255) !important;
+}
+.slick-dots li button::before {
+    color: rgb(255, 255, 255);
+}
+.slick-dots li.slick-active button::before {
+    color: rgb(255, 255, 255) !important;
+}
+.bc-table table.bc-pub-layout-table,
+body table.bc-pub-layout-table {
+    border-color: initial;
+}
+.bc-table table.bc-pub-layout-table > tbody > tr > td,
+body table.bc-pub-layout-table > tbody > tr > td {
+    border-color: initial;
+}
+.bc-pub-border-primary {
+    border-color: initial;
+}
+.bc-pub-border-secondary {
+    border-color: rgba(200, 186, 165, 0.15);
+}
+.bc-pub-border-top-none {
+    border-top-color: initial;
+}
+.bc-pub-border-top-only {
+    border-right-color: initial;
+}
+.bc-pub-border-top-only {
+    border-bottom-color: initial;
+}
+.bc-pub-border-top-only {
+    border-left-color: initial;
+}
+.bc-pub-border-right-none {
+    border-right-color: initial;
+}
+.bc-pub-border-right-only {
+    border-top-color: initial;
+}
+.bc-pub-border-right-only {
+    border-bottom-color: initial;
+}
+.bc-pub-border-right-only {
+    border-left-color: initial;
+}
+.bc-pub-border-bottom-none {
+    border-bottom-color: initial;
+}
+.bc-pub-border-bottom-only {
+    border-top-color: initial;
+}
+.bc-pub-border-bottom-only {
+    border-right-color: initial;
+}
+.bc-pub-border-bottom-only {
+    border-left-color: initial;
+}
+.bc-pub-border-left-none {
+    border-left-color: initial;
+}
+.bc-pub-border-left-only {
+    border-top-color: initial;
+}
+.bc-pub-border-left-only {
+    border-right-color: initial;
+}
+.bc-pub-border-left-only {
+    border-bottom-color: initial;
+}
+.adbl-error-state input,
+.adbl-error-state input:focus,
+.adbl-error-state select,
+.adbl-error-state select:focus,
+.adbl-error-state textbox,
+.adbl-error-state textbox:focus,
+.adbl-field-error {
+    border-color: rgb(255, 65, 27);
+}
+.bc-table.bc-table-bordered tr.payments-widget-error td,
+.bc-table.bc-table-bordered tr.payments-widget-error:first-child,
+.bc-table.bc-table-striped tr.payments-widget-error td,
+.bc-table.bc-table-striped tr.payments-widget-error:first-child {
+    border-bottom-color: initial;
+}
+.payments-widget-loader-wrapper {
+    background-image: initial;
+    background-color: rgba(36, 39, 41, 0.6);
+}
+.payments-widget-loader-spinner {
+    background-image: url("https://m.media-amazon.com/images/G/01/Audible/en_US/images/carousel/Spinner_Carousel._V269742027_.gif");
+    background-color: transparent;
+}

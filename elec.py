@@ -108,3 +108,4 @@ def electron_launcher(launcher_name, app_name, address, icon, description, categ
         js_string = ''.join(js_lines)
         js_file.write(js_string)
         js_file.close()
+    system("notify-send 'App Ready' '" + str(reduced_name) + " is now installed!' -i " + str(icon))
