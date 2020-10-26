@@ -109,3 +109,23 @@ def electron_launcher(launcher_name, app_name, address, icon, description, categ
         js_file.write(js_string)
         js_file.close()
     system("notify-send 'App Ready' '" + str(reduced_name) + " is now installed!' -i " + str(icon))
+
+def uninstall(name, desktop_name=None, full_remove=False):
+    ex_name = name.replace(' ', '-', 999).lower()
+    inst_dir = path.join(suite, name)
+    try:
+        shutil.rmtree(inst_dir)
+    except:
+        print('Install directory already removed.')
+    if desktop_name is None:
+        desktop_name = ex_name
+    try:
+        os.remove(path.join(util.home, '.local', 'share', 'applications', desktop_name + '.desktop'))
+    except:
+        print('Launcher already removed.')
+    if full_remove:
+        conf_dir = path.join(util.home, '.config', name)
+        try:
+            shutil.rmtree(conf_dir)
+        except:
+            print('User data already removed.')
