@@ -123,6 +123,10 @@ def uninstall(name, desktop_name=None, full_remove=False):
         os.remove(path.join(util.home, '.local', 'share', 'applications', desktop_name + '.desktop'))
     except:
         print('Launcher already removed.')
+    try:
+        os.remove(path.join(util.home, '.local', 'bin', ex_name))
+    except:
+        print('Launch script already removed.')
     if full_remove:
         conf_dir = path.join(util.home, '.config', name)
         try:
