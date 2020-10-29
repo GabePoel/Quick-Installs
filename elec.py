@@ -36,6 +36,7 @@ def generate(address, name, icon, dark=True, all_urls=True, flags=''):
         # dialog.run()
         # fp = dialog.get_filename()
     system('inkscape -z ' + str(fp) + ' -w 1024 -h 1024 -e ' + str(path.join(here, 'icon.png')))
+    system('inkscape -z ' + str(fp) + ' -w 1024 -h 1024 -o ' + str(path.join(here, 'icon.png')))
     if dark:
         system('nativefier ' + address + ' --name "' + name + '" --inject ~/Documents/Quick-Installs/resources/nativefier-dark.js --icon ' + path.join(here, 'icon.png') + flags)
     else:
