@@ -26,21 +26,20 @@ def generate(address, name, icon, dark=True, all_urls=True, flags=''):
     fp = get_icon(icon)
     if fp is None:
         fp = get_icon('application-default-icon')
-        # dialog = Gtk.FileChooserDialog(action=Gtk.FileChooserAction.OPEN)
-        # dialog.add_buttons(
-        #     Gtk.STOCK_CANCEL,
-        #     Gtk.ResponseType.CANCEL,
-        #     Gtk.STOCK_OPEN,
-        #     Gtk.ResponseType.OK,
-        # )
-        # dialog.run()
-        # fp = dialog.get_filename()
-    system('inkscape -z ' + str(fp) + ' -w 1024 -h 1024 -e ' + str(path.join(here, 'icon.png')))
-    system('inkscape -z ' + str(fp) + ' -w 1024 -h 1024 -o ' + str(path.join(here, 'icon.png')))
-    if dark:
-        system('nativefier ' + address + ' --name "' + name + '" --inject ~/Documents/Quick-Installs/resources/nativefier-dark.js --icon ' + path.join(here, 'icon.png') + flags)
-    else:
-        system('nativefier ' + address + ' --name "' + name + '" --icon ' + path.join(here, 'icon.png') + flags)
+    def make_app():
+        if dark:
+            system('nativefier ' + address + ' --name "' + name + '" --inject ~/Documents/Quick-Installs/resources/nativefier-dark.js --icon ' + path.join(here, 'icon.png') + flags)
+        else:
+            system('nativefier ' + address + ' --name "' + name + '" --icon ' + path.join(here, 'icon.png') + flags)
+    try:
+        system('inkscape ' + str(fp) + ' -w 1024 -h 1024 -o ' + str(path.join(here, 'icon.png')))
+        system('inkscape ' + str(fp) + ' -w 1024 -h 1024 -e ' + str(path.join(here, 'icon.png')))
+        make_app()
+    except:
+        print('Image rendering failed. Trying with different flags.')
+        system('inkscape -z ' + str(fp) + ' -w 1024 -h 1024 -o ' + str(path.join(here, 'icon.png')))
+        system('inkscape -z ' + str(fp) + ' -w 1024 -h 1024 -e ' + str(path.join(here, 'icon.png')))
+        make_app()
     os.remove(path.join(here, 'icon.png'))
     os.rename(target_name, reduced_name)
     target_name = path.join(here, reduced_name)
