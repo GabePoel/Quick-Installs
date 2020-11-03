@@ -7,7 +7,7 @@ import os
 elec.uninstall('Messenger', 'messenger', True)
 
 todoist_actions = [
-    ['add', 'Quick Add', 'com.github.alainm23.planner.quick-add']
+    ['add', 'Quick Add', 'com.github.alainm23.planner.quick-add', 'todo-indicator']
 ]
 elec.electron_launcher('audible.desktop', 'Audible', 'https://audible.com', 'audible', 'Audiobooks by Amazon.', categories=['Media'], all_urls=True, dark=False, flags='--tray --single-instance --app-version "0.3"', notifications=True, styles='audible')
 elec.electron_launcher('kindle.desktop', 'Kindle', 'https://read.amazon.com', 'application-x-mobi8-ebook', 'Ebooks by Amazon.', categories=['Media'], all_urls=True, dark=False, flags='--tray --single-instance --app-version "0.2"', notifications=True)

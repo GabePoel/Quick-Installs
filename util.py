@@ -29,6 +29,8 @@ def make_launcher(file_name, app_name, executable, comment, icon, categories=[],
         for action in actions:
             launcher_string += '\n\n[Desktop Action ' + action[0] + ']\nName=' + action[1] + '\n'
             launcher_string += 'Exec=' + action[2]
+            if len(action) > 3:
+                launcher_string += '\nIcon=' + action[3]
     launcher.write(launcher_string)
 
 def category_string(categories):
