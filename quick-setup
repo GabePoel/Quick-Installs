@@ -1,8 +1,42 @@
 #!/usr/bin/python3
 
-from platform import dist
-option = dist()[1]
-if option == 'fedora':
-    system('python3 first-run-fedora')
-elif option == 'elementary':
-    system('python3 first-run-debian')
+from distro import linux_distribution
+from os import system
+
+system = linux_distribution()[0].lower()
+apt_flags = [
+    'ubuntu',
+    'debian',
+    'elementary',
+    'pop',
+    'deepin',
+    'mint',
+    'neon'
+]
+dnf_flags = [
+    'fedora',
+    'centos',
+    'red'
+]
+pac_flags = [
+    'arch',
+    'manjaro'
+]
+installer = None
+for flag in apt_flags:
+    if flag in system:
+        installer = 'apt'
+for flag in dnf_flags:
+    if flag in system:
+        installer = 'dnf'
+for flag in pac_flags:
+    if flag in system:
+        installer = 'pac'
+if installer is None:
+    print('Quick install is not compatible with your system.')
+elif installer == 'apt':
+    system('python3 first-run-apt')
+elif installer == 'dnf':
+    system('python3 first-run-dnf')
+elif installer == 'pac':
+    print('Quick install is not available for Arch based systems.')
