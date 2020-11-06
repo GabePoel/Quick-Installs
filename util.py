@@ -89,9 +89,9 @@ def flatpak_install(app_list):
 def import_list(fp):
     f = open(fp, 'r')
     l = f.read().split("\n")
+    l = [name for name in l if name[0] != '#']
     f.close()
     return l
-
 
 def check_dir(fp):
     if not path.exists(fp):
