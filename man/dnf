@@ -1,41 +1,56 @@
+# Elementary Stuff
+lightdm
+elementary-greeter
+light-locker
+
+# Utilities
 xdotool
 xsel
 python3-tkinter
-# audacity
-gnome-tweaks
+npm
+gfortran
+blas-devel
+lapack-devel
+python3-devel
+libinput-gestures
+
+# Programs
 gnome-clocks
 gnome-contacts
-# deja-dup
-# gnome-documents
 drawing
-# gnome-extensions-app
-# foliate
-# octave
 inkscape
-# krita
 gnome-maps
-# peek
-# gnome-photos
-# gnome-shell-extension-pomodoro
-# setzer
 shotwell
 tilix
-# tilix-nautilus
 transmission-common
 transmission-gtk
 gnome-weather
 gimp
 pdfarranger
 fira-code-fonts
-python3-devel
-gfortran
-blas-devel
-lapack-devel
 nutty
-# dotnet-sdk-3.1
-# aspnetcore-runtime-3.1
-# dotnet-runtime-3.1
-npm
-# materia-gtk-theme
 discord
 mendeleydesktop
+1password
+google-chrome
+firefox
+slack
+
+# Misc
+#audacity
+#deja-dup
+#gnome-documents
+#gnome-extensions-app
+#foliate
+#octave
+#peek
+#gnome-photos
+#gnome-shell-extension-pomodoro
+#setzer
+#tilix-nautilus
+#krita
+#dotnet-sdk-3.1
+#aspnetcore-runtime-3.1
+#dotnet-runtime-3.1
+#materia-gtk-theme
+#gnome-tweaks
