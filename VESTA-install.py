@@ -56,7 +56,8 @@ launcher.write(
     "Exec=" + os.path.join(home, '.local', 'share', 'VESTA', 'VESTA') + "\n" + 
     "Comment=3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies.\n" +
     "Terminal=false\n" + 
-    "Icon=" + os.path.join(home, '.local', 'share', 'VESTA', 'img', 'vesta.svg') + "\n" +
+    # "Icon=" + os.path.join(home, '.local', 'share', 'VESTA', 'img', 'vesta.svg') + "\n" +
+    "Icon=vesta\n" +
     "Type=Application\n" +
     "Categories=Science; Education;"
 )
