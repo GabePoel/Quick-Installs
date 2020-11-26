@@ -13,6 +13,7 @@ blas-devel
 lapack-devel
 python3-devel
 libinput-gestures
+fd-find
 
 # Programs
 gnome-clocks
