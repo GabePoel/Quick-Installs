@@ -2,10 +2,12 @@ import gi
 import os
 import util
 import shutil
+import sys
 from os import system
 from os import path
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
+Gtk.init(sys.argv)
 
 suite = path.join(util.home, '.local', 'share', 'electron-suite')
 
@@ -70,6 +72,8 @@ def generate(address, name, icon, dark=True, all_urls=True, flags=''):
     
 def get_icon(icon_name):
     icon_theme = Gtk.IconTheme.get_default()
+    print(icon_name)
+    print(icon_theme)
     icon = icon_theme.lookup_icon(icon_name, 48, 0)
     if icon:
         return icon.get_filename()
